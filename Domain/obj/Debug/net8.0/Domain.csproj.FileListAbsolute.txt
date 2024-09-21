@@ -1,0 +1,11 @@
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\bin\Debug\net8.0\Domain.deps.json
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\bin\Debug\net8.0\Domain.dll
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\bin\Debug\net8.0\Domain.pdb
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.dll
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\refint\Domain.dll
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.pdb
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\ref\Domain.dll

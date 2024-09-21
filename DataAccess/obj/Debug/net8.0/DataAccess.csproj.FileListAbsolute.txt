@@ -1,0 +1,14 @@
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\bin\Debug\net8.0\DataAccess.dll
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.dll
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
