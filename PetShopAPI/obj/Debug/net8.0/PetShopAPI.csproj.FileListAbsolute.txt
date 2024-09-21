@@ -49,7 +49,6 @@ E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.Ge
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.AssemblyInfoInputs.cache
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.AssemblyInfo.cs
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.csproj.CoreCompileInputs.cache
-E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.MvcApplicationPartsAssemblyInfo.cs
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.MvcApplicationPartsAssemblyInfo.cache
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\staticwebassets.build.json
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\staticwebassets.development.json

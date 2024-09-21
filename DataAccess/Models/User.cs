@@ -21,8 +21,6 @@ public partial class User
 
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
-    public virtual ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
-
     public virtual ICollection<DiscountUsage> DiscountUsages { get; set; } = new List<DiscountUsage>();
 
     public virtual ICollection<File> Files { get; set; } = new List<File>();

@@ -17,7 +17,7 @@ public partial class PetshopContext : DbContext
 
     public virtual DbSet<Appointment> Appointments { get; set; }
 
-    public virtual DbSet<AuditLog> AuditLogs { get; set; }
+    public virtual DbSet<Breed> Breeds { get; set; }
 
     public virtual DbSet<Category> Categories { get; set; }
 
@@ -59,7 +59,9 @@ public partial class PetshopContext : DbContext
 
     public virtual DbSet<UserRole> UserRoles { get; set; }
 
-  
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=.;Database=petshop;TrustServerCertificate=True;Trusted_Connection=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -87,20 +89,15 @@ public partial class PetshopContext : DbContext
                 .HasConstraintName("FK__Appointme__UserI__06CD04F7");
         });
 
-        modelBuilder.Entity<AuditLog>(entity =>
+        modelBuilder.Entity<Breed>(entity =>
         {
-            entity.HasKey(e => e.AuditLogId).HasName("PK__AuditLog__EB5F6CBDDCC5A673");
+            entity.HasKey(e => e.BreedId).HasName("PK__Breeds__D1E9AE9DC6811102");
 
-            entity.Property(e => e.Action).HasMaxLength(50);
-            entity.Property(e => e.PerformedAt)
+            entity.Property(e => e.BreedName).HasMaxLength(100);
+            entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
-            entity.Property(e => e.TableName).HasMaxLength(100);
-
-            entity.HasOne(d => d.PerformedByNavigation).WithMany(p => p.AuditLogs)
-                .HasForeignKey(d => d.PerformedBy)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__AuditLogs__Perfo__71D1E811");
+            entity.Property(e => e.IsDeleted).HasDefaultValue(false);
         });
 
         modelBuilder.Entity<Category>(entity =>
@@ -134,7 +131,7 @@ public partial class PetshopContext : DbContext
         {
             entity.HasKey(e => e.DiscountUsageId).HasName("PK__Discount__C5D41D63467F0AD3");
 
-            entity.ToTable("DiscountUsage");
+            entity.ToTable("DiscountUsage", tb => tb.HasTrigger("trg_DiscountUsageLimit"));
 
             entity.Property(e => e.IsDeleted).HasDefaultValue(false);
             entity.Property(e => e.UsedAt)
@@ -144,12 +141,12 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.Discount).WithMany(p => p.DiscountUsages)
                 .HasForeignKey(d => d.DiscountId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__DiscountU__Disco__29221CFB");
+                .HasConstraintName("FK__DiscountU__Disco__214BF109");
 
             entity.HasOne(d => d.User).WithMany(p => p.DiscountUsages)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__DiscountU__UserI__2A164134");
+                .HasConstraintName("FK__DiscountU__UserI__22401542");
         });
 
         modelBuilder.Entity<File>(entity =>
@@ -167,7 +164,7 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.UploadedByNavigation).WithMany(p => p.Files)
                 .HasForeignKey(d => d.UploadedBy)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Files__UploadedB__60A75C0F");
+                .HasConstraintName("FK__Files__UploadedB__251C81ED");
         });
 
         modelBuilder.Entity<FilePermission>(entity =>
@@ -181,12 +178,12 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.File).WithMany(p => p.FilePermissions)
                 .HasForeignKey(d => d.FileId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__FilePermi__FileI__656C112C");
+                .HasConstraintName("FK__FilePermi__FileI__2334397B");
 
             entity.HasOne(d => d.Role).WithMany(p => p.FilePermissions)
                 .HasForeignKey(d => d.RoleId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__FilePermi__RoleI__66603565");
+                .HasConstraintName("FK__FilePermi__RoleI__24285DB4");
         });
 
         modelBuilder.Entity<Inventory>(entity =>
@@ -218,12 +215,12 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.Receiver).WithMany(p => p.MessageReceivers)
                 .HasForeignKey(d => d.ReceiverId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Messages__Receiv__6D0D32F4");
+                .HasConstraintName("FK__Messages__Receiv__2704CA5F");
 
             entity.HasOne(d => d.Sender).WithMany(p => p.MessageSenders)
                 .HasForeignKey(d => d.SenderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Messages__Sender__6C190EBB");
+                .HasConstraintName("FK__Messages__Sender__27F8EE98");
         });
 
         modelBuilder.Entity<Order>(entity =>
@@ -239,7 +236,7 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Orders__UserId__5812160E");
+                .HasConstraintName("FK__Orders__UserId__2AD55B43");
         });
 
         modelBuilder.Entity<OrderItem>(entity =>
@@ -251,12 +248,12 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.Order).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.OrderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__OrderItem__Order__5CD6CB2B");
+                .HasConstraintName("FK__OrderItem__Order__28ED12D1");
 
             entity.HasOne(d => d.Product).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__OrderItem__Produ__5DCAEF64");
+                .HasConstraintName("FK__OrderItem__Produ__29E1370A");
         });
 
         modelBuilder.Entity<Payment>(entity =>
@@ -296,7 +293,6 @@ public partial class PetshopContext : DbContext
         {
             entity.HasKey(e => e.PetId).HasName("PK__Pets__48E5386248A68E91");
 
-            entity.Property(e => e.Breed).HasMaxLength(100);
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
@@ -305,18 +301,22 @@ public partial class PetshopContext : DbContext
             entity.Property(e => e.Price).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
 
+            entity.HasOne(d => d.Breed).WithMany(p => p.Pets)
+                .HasForeignKey(d => d.BreedId)
+                .HasConstraintName("FK_Pets_Breeds");
+
             entity.HasOne(d => d.Category).WithMany(p => p.Pets)
                 .HasForeignKey(d => d.CategoryId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Pets__CategoryId__5165187F");
+                .HasConstraintName("FK__Pets__CategoryId__2DB1C7EE");
 
             entity.HasOne(d => d.CreatedByNavigation).WithMany(p => p.PetCreatedByNavigations)
                 .HasForeignKey(d => d.CreatedBy)
-                .HasConstraintName("FK__Pets__CreatedBy__52593CB8");
+                .HasConstraintName("FK__Pets__CreatedBy__2EA5EC27");
 
             entity.HasOne(d => d.UpdatedByNavigation).WithMany(p => p.PetUpdatedByNavigations)
                 .HasForeignKey(d => d.UpdatedBy)
-                .HasConstraintName("FK__Pets__UpdatedBy__5441852A");
+                .HasConstraintName("FK__Pets__UpdatedBy__2F9A1060");
         });
 
         modelBuilder.Entity<Product>(entity =>
@@ -336,15 +336,15 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.Category).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CategoryId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Products__Catego__49C3F6B7");
+                .HasConstraintName("FK__Products__Catego__308E3499");
 
             entity.HasOne(d => d.CreatedByNavigation).WithMany(p => p.ProductCreatedByNavigations)
                 .HasForeignKey(d => d.CreatedBy)
-                .HasConstraintName("FK__Products__Create__4BAC3F29");
+                .HasConstraintName("FK__Products__Create__318258D2");
 
             entity.HasOne(d => d.UpdatedByNavigation).WithMany(p => p.ProductUpdatedByNavigations)
                 .HasForeignKey(d => d.UpdatedBy)
-                .HasConstraintName("FK__Products__Update__4D94879B");
+                .HasConstraintName("FK__Products__Update__32767D0B");
         });
 
         modelBuilder.Entity<ProductsSupplier>(entity =>
@@ -359,12 +359,12 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.Product).WithMany(p => p.ProductsSuppliers)
                 .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__ProductsS__Produ__7B5B524B");
+                .HasConstraintName("FK__ProductsS__Produ__336AA144");
 
             entity.HasOne(d => d.Supplier).WithMany(p => p.ProductsSuppliers)
                 .HasForeignKey(d => d.SupplierId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__ProductsS__Suppl__7C4F7684");
+                .HasConstraintName("FK__ProductsS__Suppl__345EC57D");
         });
 
         modelBuilder.Entity<Review>(entity =>
@@ -387,12 +387,12 @@ public partial class PetshopContext : DbContext
 
             entity.HasOne(d => d.Service).WithMany(p => p.Reviews)
                 .HasForeignKey(d => d.ServiceId)
-                .HasConstraintName("FK__Reviews__Service__1EA48E88");
+                .HasConstraintName("FK__Reviews__Service__00DF2177");
 
             entity.HasOne(d => d.User).WithMany(p => p.Reviews)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Reviews__UserId__1BC821DD");
+                .HasConstraintName("FK__Reviews__UserId__01D345B0");
         });
 
         modelBuilder.Entity<Role>(entity =>
@@ -444,11 +444,11 @@ public partial class PetshopContext : DbContext
 
             entity.HasOne(d => d.CreatedByNavigation).WithMany(p => p.SupplierCreatedByNavigations)
                 .HasForeignKey(d => d.CreatedBy)
-                .HasConstraintName("FK__Suppliers__Creat__75A278F5");
+                .HasConstraintName("FK__Suppliers__Creat__04AFB25B");
 
             entity.HasOne(d => d.UpdatedByNavigation).WithMany(p => p.SupplierUpdatedByNavigations)
                 .HasForeignKey(d => d.UpdatedBy)
-                .HasConstraintName("FK__Suppliers__Updat__778AC167");
+                .HasConstraintName("FK__Suppliers__Updat__05A3D694");
         });
 
         modelBuilder.Entity<User>(entity =>
@@ -480,12 +480,12 @@ public partial class PetshopContext : DbContext
             entity.HasOne(d => d.Role).WithMany(p => p.UserRoles)
                 .HasForeignKey(d => d.RoleId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__UserRoles__RoleI__4222D4EF");
+                .HasConstraintName("FK__UserRoles__RoleI__0697FACD");
 
             entity.HasOne(d => d.User).WithMany(p => p.UserRoles)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__UserRoles__UserI__412EB0B6");
+                .HasConstraintName("FK__UserRoles__UserI__078C1F06");
         });
 
         OnModelCreatingPartial(modelBuilder);

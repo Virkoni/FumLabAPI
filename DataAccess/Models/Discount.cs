@@ -19,5 +19,7 @@ public partial class Discount
 
     public bool? IsDeleted { get; set; }
 
+    public int? UsageLimit { get; set; }
+
     public virtual ICollection<DiscountUsage> DiscountUsages { get; set; } = new List<DiscountUsage>();
 }

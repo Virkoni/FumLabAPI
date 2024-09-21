@@ -11,8 +11,6 @@ public partial class Pet
 
     public int CategoryId { get; set; }
 
-    public string? Breed { get; set; }
-
     public int? Age { get; set; }
 
     public decimal? Price { get; set; }
@@ -26,6 +24,10 @@ public partial class Pet
     public DateTime? UpdatedAt { get; set; }
 
     public bool? IsDeleted { get; set; }
+
+    public int? BreedId { get; set; }
+
+    public virtual Breed? Breed { get; set; }
 
     public virtual Category Category { get; set; } = null!;
 
