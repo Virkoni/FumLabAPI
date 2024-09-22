@@ -909,7 +909,8 @@
       },
       "BusinessLogic/1.0.0": {
         "dependencies": {
-          "DataAccess": "1.0.0"
+          "DataAccess": "1.0.0",
+          "Domain": "1.0.0"
         },
         "runtime": {
           "BusinessLogic.dll": {
@@ -920,6 +921,7 @@
       },
       "DataAccess/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
         "runtime": {
@@ -930,6 +932,9 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
+        },
         "runtime": {
           "Domain.dll": {
             "assemblyVersion": "1.0.0",

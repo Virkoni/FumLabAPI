@@ -1,14 +1,13 @@
-
-using DataAccess.Interfaces;
-using DataAccess.Models;
+using Domain.Interfaces;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
-using BusinessLogic.Interfaces;
 using BusinessLogic.Services;
 using DataAccess.Wrapper;
+
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 using Microsoft.OpenApi.Models;
-using DataAccess.Wrapper.DataAccess.Wrapper;
+
 
 
 namespace PetShopAPI
