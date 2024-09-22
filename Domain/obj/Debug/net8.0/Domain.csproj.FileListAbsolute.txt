@@ -9,3 +9,7 @@ E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.dll
 E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\refint\Domain.dll
 E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.pdb
 E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\ref\Domain.dll
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache

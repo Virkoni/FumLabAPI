@@ -1,8 +1,8 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
+﻿using Domain.Interfaces;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BackendApi.Controllers
+namespace PetShopAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

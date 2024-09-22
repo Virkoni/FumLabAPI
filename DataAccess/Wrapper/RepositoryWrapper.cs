@@ -1,7 +1,6 @@
-﻿using DataAccess.Interfaces;
-using DataAccess.Models;
+﻿using Domain.Interfaces;
+using Domain.Models;
 using DataAccess.Repositories;
-using DataAccess.Wrapper.DataAccess.Wrapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +15,8 @@ namespace DataAccess.Wrapper
         private PetshopContext _repoContext;
 
         private IUserRepository _user;
+        private IRoleRepository _role;
+        private IUserRoleRepository _userRole;
 
         public IUserRepository User
         {
@@ -31,14 +32,44 @@ namespace DataAccess.Wrapper
             }
         }
 
+        public IRoleRepository Role
+        {
+            get
+            {
+                if (_role == null)
+
+                {
+                    _role = new RoleRepository(_repoContext);
+                }
+
+                return _role;
+            }
+        }
+
+        public IUserRoleRepository UserRole
+        {
+            get
+            {
+                if (_userRole == null)
+
+                {
+                    _userRole = new UserRoleRepository(_repoContext);
+                }
+
+                return _userRole;
+            }
+        }
+
+
+
         public RepositoryWrapper(PetshopContext repositoryContext)
         {
             _repoContext = repositoryContext;
         }
 
-        public void Save()
+        public async Task Save()
         { 
-            _repoContext.SaveChanges();
+            await _repoContext.SaveChangesAsync();
         }
     }
 }

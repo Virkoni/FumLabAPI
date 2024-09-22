@@ -12,3 +12,7 @@ E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\refint\DataAc
 E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
 E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\bin\Debug\net8.0\Domain.dll
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\bin\Debug\net8.0\Domain.pdb
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+E:\crapik\sharag2\DATABASES\sol badguy\DataAccess\obj\Debug\net8.0\DataAccess.csproj.Up2Date
