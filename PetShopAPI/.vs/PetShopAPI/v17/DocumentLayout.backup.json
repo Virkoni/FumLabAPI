@@ -3,141 +3,91 @@
   "WorkspaceRootPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\appointmentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA2F22CE-8C23-4A6B-823A-888645F49F2B}|..\\DataAccess\\DataAccess.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA2F22CE-8C23-4A6B-823A-888645F49F2B}|..\\DataAccess\\DataAccess.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA2F22CE-8C23-4A6B-823A-888645F49F2B}|..\\DataAccess\\DataAccess.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\dataaccess\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA2F22CE-8C23-4A6B-823A-888645F49F2B}|..\\DataAccess\\DataAccess.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\dataaccess\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\iappointmentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA2F22CE-8C23-4A6B-823A-888645F49F2B}|..\\DataAccess\\DataAccess.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\petshopapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\petshopapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\petshopapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\suppliersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\categoriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\iuserroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\breedsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\discountusageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\discountsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\reviewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\paymentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\paymentmethodsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\productsuppliersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\messagesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\filepermissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\filesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\orderitemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\petsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\services\\productsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\petshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\productssupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\filepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\discountusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\discount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\breed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\petshopapi\\petshopapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|solutionrelative:petshopapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|..\\BusinessLogic\\BusinessLogic.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\businesslogic\\businesslogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA2F22CE-8C23-4A6B-823A-888645F49F2B}|..\\DataAccess\\DataAccess.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\petshopapi\\petshopapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|PetShopAPI.csproj|solutionrelative:petshopapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|..\\Domain\\Domain.csproj|e:\\crapik\\sharag2\\databases\\sol badguy\\domain\\interfaces\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -147,580 +97,383 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\UserRepository.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "..\\DataAccess\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T16:28:18.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "IRepositoryWrapper.cs",
               "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IRepositoryWrapper.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IRepositoryWrapper.cs",
               "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IRepositoryWrapper.cs",
               "RelativeToolTip": "..\\Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T10:32:54.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoleRepository.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Repositories\\RoleRepository.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\RoleRepository.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Repositories\\RoleRepository.cs",
-              "RelativeToolTip": "..\\DataAccess\\Repositories\\RoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T10:41:10.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Repositories\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\RepositoryBase.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Repositories\\RepositoryBase.cs",
-              "RelativeToolTip": "..\\DataAccess\\Repositories\\RepositoryBase.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T15:54:32.072Z",
+              "WhenOpened": "2024-09-23T17:13:31.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\UserService.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\UserService.cs",
-              "RelativeToolTip": "..\\BusinessLogic\\Services\\UserService.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
+              "Title": "IAppointmentsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IAppointmentsService.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IAppointmentsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IAppointmentsService.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IAppointmentsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T16:53:05.914Z",
+              "WhenOpened": "2024-09-23T17:10:36.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RoleService.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\RoleService.cs",
-              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\RoleService.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\RoleService.cs",
-              "RelativeToolTip": "..\\BusinessLogic\\Services\\RoleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "Title": "AppointmentsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\AppointmentsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\AppointmentsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\AppointmentsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\AppointmentsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T10:43:06.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepositoryWrapper.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "RelativeToolTip": "..\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAkwBMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T16:20:42.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IRoleRepository.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IRoleRepository.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IRoleRepository.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IRoleRepository.cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\IRoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T10:31:29.27Z",
+              "WhenOpened": "2024-09-23T17:04:44.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IRepositoryBase.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IRepositoryBase.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IRepositoryBase.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IRepositoryBase.cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\IRepositoryBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "SuppliersService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\SuppliersService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\SuppliersService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\SuppliersService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\SuppliersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T10:32:22.893Z",
+              "WhenOpened": "2024-09-23T17:04:19.317Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "Controllers\\RoleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\UserService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T10:30:40.964Z",
+              "WhenOpened": "2024-09-23T17:00:13.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UserRoleService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\UserRoleService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\UserRoleService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\UserRoleService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\UserRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T15:59:59.885Z",
+              "WhenOpened": "2024-09-23T17:00:20.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAARAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RepositoryWrapper.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
+              "RelativeToolTip": "..\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T16:55:08.527Z",
+              "WhenOpened": "2024-09-23T17:00:33.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "IRoleService.cs",
               "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IRoleService.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IRoleService.cs",
               "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IRoleService.cs",
               "RelativeToolTip": "..\\Domain\\Interfaces\\IRoleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T10:52:25.2Z",
+              "WhenOpened": "2024-09-23T17:10:47.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\RoleService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\RoleService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:08:33.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BreedsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\BreedsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\BreedsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\BreedsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\BreedsService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:05:49.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DiscountUsageService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\DiscountUsageService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\DiscountUsageService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\DiscountUsageService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\DiscountUsageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:05:37.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriesService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\CategoriesService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\CategoriesService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\CategoriesService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\CategoriesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:03:07.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUserService.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Title": "DiscountsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\DiscountsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\DiscountsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\DiscountsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\DiscountsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:48.987Z",
+              "WhenOpened": "2024-09-23T17:05:26.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Title": "ReviewsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\ReviewsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\ReviewsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\ReviewsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\ReviewsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T10:31:54.654Z",
+              "WhenOpened": "2024-09-23T17:05:18.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUserRoleService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserRoleService.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUserRoleService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserRoleService.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IUserRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:02:48.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Class1.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Class1.cs",
-              "RelativeToolTip": "..\\Domain\\Class1.cs",
+              "Title": "PaymentsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\PaymentsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\PaymentsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\PaymentsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\PaymentsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T11:56:05.614Z",
+              "WhenOpened": "2024-09-23T17:05:10.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Role.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Role.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Role.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "PaymentMethodsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\PaymentMethodsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\PaymentMethodsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\PaymentMethodsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\PaymentMethodsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:14.765Z",
+              "WhenOpened": "2024-09-23T17:05:02.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "PetshopContext.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\PetshopContext.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\PetshopContext.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\PetshopContext.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\PetshopContext.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAgwD4AAAAJAAAAAAAAAA==",
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\InventoryService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\InventoryService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\InventoryService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\InventoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:01.765Z",
+              "WhenOpened": "2024-09-23T17:04:54.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "UserRole.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\UserRole.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\UserRole.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\UserRole.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\UserRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Title": "ServiceService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\ServiceService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\ServiceService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\ServiceService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\ServiceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:24.784Z",
+              "WhenOpened": "2024-09-23T17:04:35.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\User.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\User.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\User.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "ProductSuppliersService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\ProductSuppliersService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\ProductSuppliersService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\ProductSuppliersService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\ProductSuppliersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:21.941Z",
+              "WhenOpened": "2024-09-23T17:04:27.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Service.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Service.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Service.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Service.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Service.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "MessagesService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\MessagesService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\MessagesService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\MessagesService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\MessagesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:17.196Z",
+              "WhenOpened": "2024-09-23T17:04:11.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "Review.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Review.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Review.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Review.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Review.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "FilePermissionsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\FilePermissionsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\FilePermissionsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\FilePermissionsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\FilePermissionsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:12.53Z",
+              "WhenOpened": "2024-09-23T17:04:03.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "ProductsSupplier.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\ProductsSupplier.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\ProductsSupplier.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\ProductsSupplier.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\ProductsSupplier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "FilesService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\FilesService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\FilesService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\FilesService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\FilesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:10.469Z",
+              "WhenOpened": "2024-09-23T17:03:54.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Product.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Product.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "OrderItemsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\OrderItemsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\OrderItemsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\OrderItemsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\OrderItemsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:06.567Z",
+              "WhenOpened": "2024-09-23T17:03:46.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "Pet.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Pet.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Pet.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Pet.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Pet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "OrdersService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\OrdersService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\OrdersService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\OrdersService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\OrdersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:54.334Z",
+              "WhenOpened": "2024-09-23T17:03:38.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "PaymentMethod.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\PaymentMethod.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\PaymentMethod.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\PaymentMethod.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\PaymentMethod.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "PetsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\PetsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\PetsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\PetsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\PetsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:54.59Z",
+              "WhenOpened": "2024-09-23T17:03:29.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Payment.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Payment.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Payment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "ProductsService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\ProductsService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\ProductsService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\Services\\ProductsService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\ProductsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:51.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\OrderItem.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\OrderItem.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\OrderItem.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:49.662Z",
+              "WhenOpened": "2024-09-23T17:03:15.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "Order.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Order.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Order.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Title": "IUserRoleRepository.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserRoleRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUserRoleRepository.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserRoleRepository.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IUserRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:47.748Z",
+              "WhenOpened": "2024-09-23T17:02:47.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Message.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Message.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Message.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Message.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Message.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUserService.cs",
+              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:46.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Inventory.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Inventory.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Inventory.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:40.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "FilePermission.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\FilePermission.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\FilePermission.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\FilePermission.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\FilePermission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:41.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "File.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\File.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\File.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\File.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\File.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:37.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "DiscountUsage.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\DiscountUsage.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\DiscountUsage.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\DiscountUsage.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\DiscountUsage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:34.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Discount.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Discount.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Discount.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Discount.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Discount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:30.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Category.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Category.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:14.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Breed.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Breed.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Breed.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Breed.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Breed.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:14.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Appointment.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Appointment.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Appointment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:05:04.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Domain.csproj",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "..\\Domain\\Domain.csproj",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj",
-              "RelativeToolTip": "..\\Domain\\Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-12T14:48:26.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "PetShopAPI.csproj",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\PetShopAPI.csproj",
-              "RelativeDocumentMoniker": "PetShopAPI.csproj",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\PetShopAPI.csproj",
-              "RelativeToolTip": "PetShopAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-21T14:54:08.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "BusinessLogic.csproj",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\BusinessLogic.csproj",
-              "RelativeDocumentMoniker": "..\\BusinessLogic\\BusinessLogic.csproj",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\BusinessLogic.csproj",
-              "RelativeToolTip": "..\\BusinessLogic\\BusinessLogic.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-12T16:24:26.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Supplier.cs",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Supplier.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Supplier.cs",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Models\\Supplier.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Supplier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:19.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "DataAccess.csproj",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
-              "RelativeDocumentMoniker": "..\\DataAccess\\DataAccess.csproj",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
-              "RelativeToolTip": "..\\DataAccess\\DataAccess.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-21T14:03:08.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "PetShopAPI",
-              "DocumentMoniker": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\PetShopAPI.csproj",
-              "RelativeDocumentMoniker": "PetShopAPI.csproj",
-              "ToolTip": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\PetShopAPI\\PetShopAPI.csproj",
-              "RelativeToolTip": "PetShopAPI.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-12T15:21:30.412Z",
+              "WhenOpened": "2024-09-23T17:00:05.566Z",
               "EditorCaption": ""
             }
           ]
