@@ -22,7 +22,7 @@ namespace BusinessLogic.Services
         {
             var appointment = await _repositoryWrapper.Appointment
                 .FindByCondition(x => x.AppointmentId == id);
-            return user.First();
+            return appointment.First();
         }
 
         public async Task Create(Appointment model)
@@ -39,7 +39,7 @@ namespace BusinessLogic.Services
 
         public async Task Delete(int id)
         {
-            var appointment = await _repositoryWrapper.UserRole
+            var appointment = await _repositoryWrapper.Appointment
                 .FindByCondition(x => x.AppointmentId == id);
 
             _repositoryWrapper.Appointment.Delete(appointment.First());

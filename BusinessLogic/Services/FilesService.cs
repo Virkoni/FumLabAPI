@@ -1,12 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Domain.Interfaces;
+using Domain.Models;
 
 namespace BusinessLogic.Services
 {
-    internal class FilesService
+    public class FilesService : IFilesService
     {
+        private IRepositoryWrapper _repositoryWrapper;
+
+        public FilesService(IRepositoryWrapper repositoryWrapper)
+        {
+            _repositoryWrapper = repositoryWrapper;
+        }
+
+        public async Task<List<Domain.Models.File>> GetAll()
+        {
+            return await _repositoryWrapper.File.FindAll();
+        }
+
+        public async Task<Domain.Models.File> GetById(int id)
+        {
+            var file = await _repositoryWrapper.File
+                .FindByCondition(x => x.FileId == id);
+            return file.First();
+        }
+
+        public async Task Create(Domain.Models.File model)
+        {
+            await _repositoryWrapper.File.Create(model);
+            _repositoryWrapper.Save();
+        }
+
+        public async Task Update(Domain.Models.File model)
+        {
+            _repositoryWrapper.File.Update(model);
+            _repositoryWrapper.Save();
+        }
+
+        public async Task Delete(int id)
+        {
+            var file = await _repositoryWrapper.File
+                .FindByCondition(x => x.FileId == id);
+
+            _repositoryWrapper.File.Delete(file.First());
+            _repositoryWrapper.Save();
+        }
     }
 }
