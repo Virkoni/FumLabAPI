@@ -252,9 +252,6 @@
               },
               "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj": {
                 "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj"
-              },
-              "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj"
               }
             }
           }
@@ -274,6 +271,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.8, )"

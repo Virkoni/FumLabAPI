@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PetShopAPI</name>
+    </assembly>
+    <members>
+        <member name="M:PetShopAPI.Controllers.BreedsController.GetAll">
+            <summary>
+            Получение информации о всех породах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.BreedsController.GetById(System.Int32)">
+            <summary>
+            Получение информации о породе по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.BreedsController.Add(Domain.Models.Breed)">
+             <summary>
+             Создание новой породы
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "breedName": "string",
+                 }
+            
+             </remarks>
+             <param name="breed">Порода</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.BreedsController.Update(Domain.Models.Breed)">
+             <summary>
+             Изменение информации о пользователе
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "breedId": 1,
+                   "breedName": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="breed">Порода</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.BreedsController.Delete(System.Int32)">
+            <summary>
+            Удаление породы
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.CategoriesController.GetAll">
+            <summary>
+            Получение информации о всех категориях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.CategoriesController.GetById(System.Int32)">
+            <summary>
+            Получение информации о категории по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.CategoriesController.Add(Domain.Models.Category)">
+             <summary>
+             Создание новой категории
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                   "categoryName": "string",
+                   "Description": "string",
+                 }
+            
+             </remarks>
+             <param name="category">Категория</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.CategoriesController.Update(Domain.Models.Category)">
+             <summary>
+             Изменение информации о категориях
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "categoryId": 1,
+                   "categoryName": "string",
+                   "Description": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "updatedAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="category">Категория</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.CategoriesController.Delete(System.Int32)">
+            <summary>
+            Удаление категории
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.DiscountsController.GetAll">
+            <summary>
+            Получение информации о всех скидках
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.DiscountsController.GetById(System.Int32)">
+            <summary>
+            Получение информации о скидках по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.DiscountsController.Add(Domain.Models.Discount)">
+             <summary>
+             Создание новой скидки
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "discountName": "string",
+                    "discountPercentage" : decimal,
+                    "usageLimit" : 3,
+                    "StartDate": "2024-09-19T14:05:14.947Z",
+                    "EndDate": "2024-09-19T14:05:14.947Z",
+                 }
+            
+             </remarks>
+             <param name="discount">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.DiscountsController.Update(Domain.Models.Discount)">
+             <summary>
+             Изменение информации о скидке
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                    "discountId": 1,
+                    "discountName": "string",
+                    "discountPercentage" : decimal,
+                    "usageLimit" : 3,
+                    "StartDate": "2024-09-19T14:05:14.947Z",
+                    "EndDate": "2024-09-19T14:05:14.947Z",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "updatedAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="discount">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.DiscountsController.Delete(System.Int32)">
+            <summary>
+            Удаление скидки
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.FilesController.GetAll">
+            <summary>
+            Получение информации о всех файлах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.FilesController.GetById(System.Int32)">
+            <summary>
+            Получение информации о файле по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.FilesController.Add(Domain.Models.File)">
+             <summary>
+             Создание нового файла
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                  "nameFile": "string",
+                  "filePath": "string",
+                  "fileType": "string",
+                  "uploadedBy": 0
+                 }
+            
+             </remarks>
+             <param name="file">Файл</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.FilesController.Update(Domain.Models.File)">
+             <summary>
+             Изменение информации о файле
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                  "nameFile": "string",
+                  "filePath": "string",
+                  "fileType": "string",
+                   "uploadedBy": 0
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "updatedAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="file">Файл</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.FilesController.Delete(System.Int32)">
+            <summary>
+            Удаление файла
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.MessagesController.GetAll">
+            <summary>
+            Получение информации о всех пользователях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.MessagesController.GetById(System.Int32)">
+            <summary>
+            Получение информации о пользователе по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.MessagesController.Add(Domain.Models.Message)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "username": "string",
+                    "email" : "email@gmail.com",
+                    "passwordHash" : "!Pa$$word123@"
+                 }
+            
+             </remarks>
+             <param name="user">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.MessagesController.Update(Domain.Models.Message)">
+             <summary>
+             Изменение информации о пользователе
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "userId": 1,
+                   "email": "string",
+                   "passwordHash": "string",
+                   "username": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "updatedAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="user">Сообшение</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.MessagesController.Delete(System.Int32)">
+            <summary>
+            Удаление сообщений
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.RoleController.GetAll">
+            <summary>
+            Получение информации о всех ролях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.RoleController.GetById(System.Int32)">
+            <summary>
+            Получение информации о роли по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.RoleController.Add(Domain.Models.Role)">
+             <summary>
+             Создание новой роли
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "roleName": "string",
+                 }
+            
+             </remarks>
+             <param name="role">Роль</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.RoleController.Update(Domain.Models.Role)">
+             <summary>
+             Изменение информации о роли
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "roleId": 1,
+                   "roleName": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                 }
+            
+             </remarks>
+             <param name="role">Роль</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.RoleController.Delete(System.Int32)">
+            <summary>
+            Удаление роли
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.UserController.GetAll">
+            <summary>
+            Получение информации о всех пользователях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.UserController.GetById(System.Int32)">
+            <summary>
+            Получение информации о пользователе по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.UserController.Add(PetShopAPI.Contracts.User.CreateUserRequest)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "username": "string",
+                    "email" : "email@gmail.com",
+                    "passwordHash" : "!Pa$$word123@"
+                 }
+            
+             </remarks>
+             <param name="user">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.UserController.Update(PetShopAPI.Contracts.User.CreateUserRequest)">
+             <summary>
+             Изменение информации о пользователе
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "userId": 1,
+                   "email": "string",
+                   "passwordHash": "string",
+                   "username": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "updatedAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="user">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:PetShopAPI.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Удаление пользователя
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
