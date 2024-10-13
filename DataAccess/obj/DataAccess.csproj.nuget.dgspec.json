@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\DataAccess\\DataAccess.csproj": {}
+    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\DataAccess\\DataAccess.csproj": {
+    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\DataAccess\\obj\\",
+        "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\gnid\\.nuget\\packages\\",
+        "outputPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gnid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\Domain\\Domain.csproj"
+              "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj"
               }
             }
           }
@@ -38,11 +39,28 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,21 +72,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\Domain\\Domain.csproj": {
+    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\temp\\sol badguy\\sol badguy\\Domain\\obj\\",
+        "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\gnid\\.nuget\\packages\\",
+        "outputPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gnid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,6 +99,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,11 +112,28 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -104,7 +145,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

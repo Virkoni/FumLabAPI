@@ -1,0 +1,6 @@
+@FumLabAPI_HostAddress = http://localhost:5057
+
+GET {{FumLabAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

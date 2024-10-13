@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class MessagesRepository : RepositoryBase<Message>, IMessagesRepository
     {
-        public MessagesRepository(PetshopContext repositoryContext)
+        public MessagesRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Domain.Models;
+namespace Domain.Models;   
 
 public partial class Category
 {
@@ -16,8 +16,6 @@ public partial class Category
     public DateTime? UpdatedAt { get; set; }
 
     public bool? IsDeleted { get; set; }
-
-    public virtual ICollection<Pet> Pets { get; set; } = new List<Pet>();
 
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

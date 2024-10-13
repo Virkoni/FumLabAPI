@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class OrdersRepository : RepositoryBase<Order>, IOrdersRepository
     {
-        public OrdersRepository(PetshopContext repositoryContext)
+        public OrdersRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

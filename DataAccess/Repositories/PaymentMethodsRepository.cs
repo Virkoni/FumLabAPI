@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class PaymentMethodsRepository : RepositoryBase<PaymentMethod>, IPaymentMethodsRepository
     {
-        public PaymentMethodsRepository(PetshopContext repositoryContext)
+        public PaymentMethodsRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

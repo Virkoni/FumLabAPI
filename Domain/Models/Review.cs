@@ -9,11 +9,7 @@ public partial class Review
 
     public int UserId { get; set; }
 
-    public int? ProductId { get; set; }
-
-    public int? PetId { get; set; }
-
-    public int? ServiceId { get; set; }
+    public int ProductId { get; set; }
 
     public int? Rating { get; set; }
 
@@ -23,11 +19,7 @@ public partial class Review
 
     public bool? IsDeleted { get; set; }
 
-    public virtual Pet? Pet { get; set; }
-
-    public virtual Product? Product { get; set; }
-
-    public virtual Service? Service { get; set; }
+    public virtual Product Product { get; set; } = null!;
 
     public virtual User User { get; set; } = null!;
 }

@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class ProductsRepository : RepositoryBase<Product>, IProductsRepository
     {
-        public ProductsRepository(PetshopContext repositoryContext)
+        public ProductsRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

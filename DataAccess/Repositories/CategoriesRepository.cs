@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class CategoriesRepository : RepositoryBase<Category>, ICategoriesRepository
     {
-        public CategoriesRepository(PetshopContext repositoryContext)
+        public CategoriesRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

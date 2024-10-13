@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class ReviewsRepository : RepositoryBase<Review>, IReviewsRepository
     {
-        public ReviewsRepository(PetshopContext repositoryContext)
+        public ReviewsRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

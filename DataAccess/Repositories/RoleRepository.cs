@@ -10,7 +10,7 @@ namespace DataAccess.Repositories
 {
     public class RoleRepository : RepositoryBase<Role>, IRoleRepository
     {
-        public RoleRepository(PetshopContext repositoryContext)
+        public RoleRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

@@ -1,0 +1,685 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FumLabAPI</name>
+    </assembly>
+    <members>
+        <member name="M:FumLabAPI.Controllers.CategoriesController.GetAll">
+            <summary>
+            Получение информации о всех категориях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.CategoriesController.GetById(System.Int32)">
+            <summary>
+            Получение информации о категории по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.CategoriesController.Add(Domain.Models.Category)">
+             <summary>
+             Создание новой категории
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                   "categoryName": "string",
+                   "Description": "string",
+                 }
+            
+             </remarks>
+             <param name="category">Категория</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.CategoriesController.Update(Domain.Models.Category)">
+             <summary>
+             Изменение информации о категориях
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "categoryId": 1,
+                   "categoryName": "string",
+                   "Description": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "updatedAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="category">Категория</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.CategoriesController.Delete(System.Int32)">
+            <summary>
+            Удаление категории
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilePermissionsController.GetAll">
+            <summary>
+            Получение информации о всех разрешениях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilePermissionsController.GetById(System.Int32)">
+            <summary>
+            Получение информации о разрешениях по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilePermissionsController.Add(Domain.Models.FilePermission)">
+             <summary>
+             Создание нового разрешения
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                  "fileId": 1,
+                  "roleId": ,
+                   "canView": 0,
+                   "canEdit": 0,
+                   "canDelete": 0,
+                 }
+            
+             </remarks>
+             <param name="filePermission">Разрешение</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilePermissionsController.Update(Domain.Models.FilePermission)">
+             <summary>
+             Изменение информации о разрешении
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                  "permissionId": "string",
+                  "fileId": 1,
+                  "roleId": ,
+                   "canView": 0,
+                   "canEdit": 0,
+                   "canDelete": 0,
+                 }
+            
+             </remarks>
+             <param name="filePermission">Разрешение</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilePermissionsController.Delete(System.Int32)">
+            <summary>
+            Удаление разрешения
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilesController.GetAll">
+            <summary>
+            Получение информации о всех файлах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilesController.GetById(System.Int32)">
+            <summary>
+            Получение информации о файле по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilesController.Add(Domain.Models.File)">
+             <summary>
+             Создание нового файла
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                  "nameFile": "string",
+                  "filePath": "string",
+                  "fileType": "string",
+                  "uploadedBy": 0
+                 }
+            
+             </remarks>
+             <param name="file">Файл</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilesController.Update(Domain.Models.File)">
+             <summary>
+             Изменение информации о файле
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                  "fileId": 1,
+                  "nameFile": "string",
+                  "filePath": "string",
+                  "fileType": "string",
+                   "uploadedBy": 0
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "updatedAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="file">Файл</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.FilesController.Delete(System.Int32)">
+            <summary>
+            Удаление файла
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.InventoryController.GetAll">
+            <summary>
+            Получение информации о всем инвентаре 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.InventoryController.GetById(System.Int32)">
+            <summary>
+            Получение информации о инвентаре по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.InventoryController.Add(Domain.Models.Inventory)">
+             <summary>
+             Создание нового инвентаря
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "productId" : 1,
+                    "quantity" : 3,
+                 }
+            
+             </remarks>
+             <param name="inventory">Инвентарь</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.InventoryController.Update(Domain.Models.Inventory)">
+             <summary>
+             Изменение информации об инвентаре
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                    "productId" : 1,
+                    "quantity" : 3,
+                    "lastUpdated": "2024-09-19T14:05:14.947Z",
+                    "isDeleted": 1
+                 }
+            
+             </remarks>
+             <param name="inventory">Инвентарь</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.InventoryController.Delete(System.Int32)">
+            <summary>
+            Удаление инвентаря
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.MessagesController.GetAll">
+            <summary>
+            Получение информации о всех сообщениях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.MessagesController.GetById(System.Int32)">
+            <summary>
+            Получение информации о сообщении по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.MessagesController.Add(Domain.Models.Message)">
+             <summary>
+             Создание нового сообщения
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "senderId": 1,
+                    "receiverId": 1,
+                    "messageText": "string",
+                 }
+            
+             </remarks>
+             <param name="message">Сообщение</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.MessagesController.Update(Domain.Models.Message)">
+             <summary>
+             Изменение информации о сообщении
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                    "messageId": 1,
+                    "senderId": 1,
+                    "receiverId": 1,
+                    "messageText": "string",
+                    "sentAt": "2024-09-19T14:05:14.947Z",
+                    "isDeleted": 1
+                 }
+            
+             </remarks>
+             <param name="message">Сообщение</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.MessagesController.Delete(System.Int32)">
+            <summary>
+            Удаление сообщений
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.OrdersController.GetAll">
+            <summary>
+            Получение информации о всех заказах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.OrdersController.GetById(System.Int32)">
+            <summary>
+            Получение информации о заказе по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.OrdersController.Add(Domain.Models.Order)">
+             <summary>
+             Создание нового заказа
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "userId": 1,
+                     "totalAmount": decimal,
+                     "orderDate": "2024-09-19T14:05:14.947Z"
+                 }
+             </remarks>
+             <param name="order">Заказ</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.OrdersController.Update(Domain.Models.Order)">
+             <summary>
+             Изменение информации о заказе
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "orderId": 1,
+                   "userId": 1,
+                   "totalAmount": decimal,
+                   "orderDate": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="order">Заказ</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.OrdersController.Delete(System.Int32)">
+            <summary>
+            Удаление заказа
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentMethodsController.GetAll">
+            <summary>
+            Получение информации о всех способах платежа
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentMethodsController.GetById(System.Int32)">
+            <summary>
+            Получение информации о способах платежа по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentMethodsController.Add(Domain.Models.PaymentMethod)">
+             <summary>
+             Создание нового способа платежа
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                   "methodName": "string",
+                   "description": "string"
+                 }
+            
+             </remarks>
+             <param name="paymentMethod">Cпособ платежа</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentMethodsController.Update(Domain.Models.PaymentMethod)">
+             <summary>
+             Изменение информации о способах платежа
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "paymentMethodId": 1,
+                   "methodName": "string",
+                   "description": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="paymentMethod">Cпособ платежая</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentMethodsController.Delete(System.Int32)">
+            <summary>
+            Удаление способа платежа
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentsController.GetAll">
+            <summary>
+            Получение информации о всех платежах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentsController.GetById(System.Int32)">
+            <summary>
+            Получение информации о платежах по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentsController.Add(Domain.Models.Payment)">
+             <summary>
+             Создание нового платежа
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                   "orderId": 1,
+                   "paymentMethodId": 1,
+                   "amount": decimal,
+                 }
+            
+             </remarks>
+             <param name="paymentMethod">Платеж</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentsController.Update(Domain.Models.Payment)">
+             <summary>
+             Изменение информации о платеже
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "paymentId": 1,
+                   "orderId": 1,
+                   "paymentMethodId": 1,
+                   "amount": decimal,
+                   "paymentDate": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1
+                 }
+            
+             </remarks>
+             <param name="paymentMethod">Платеж</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PaymentsController.Delete(System.Int32)">
+            <summary>
+            Удаление платежа
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ReviewsController.GetAll">
+            <summary>
+            Получение информации о всех отзывах
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ReviewsController.GetById(System.Int32)">
+            <summary>
+            Получение информации об отзывах по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ReviewsController.Add(Domain.Models.Review)">
+             <summary>
+             Создание нового отзыва
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                   "productId": 1,  
+                   "petId": 1,
+                   "serviceId": 1,
+                   "rating": 1,
+                   "ratingText": "string",
+                 }
+            
+             </remarks>
+             <param name="review">Отзыв</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ReviewsController.Update(Domain.Models.Review)">
+             <summary>
+             Изменение информации об отзыве
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "userId": 1,  
+                   "productId": 1,  
+                   "petId": 1,
+                   "serviceId": 1,
+                   "rating": 1,
+                   "ratingText": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                   "isDeleted": 1,
+                 }
+            
+             </remarks>
+             <param name="review">Отзыв</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ReviewsController.Delete(System.Int32)">
+            <summary>
+            Удаление отзыва
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.RoleController.GetAll">
+            <summary>
+            Получение информации о всех ролях
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.RoleController.GetById(System.Int32)">
+            <summary>
+            Получение информации о роли по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.RoleController.Add(Domain.Models.Role)">
+             <summary>
+             Создание новой роли
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "roleName": "string",
+                 }
+            
+             </remarks>
+             <param name="role">Роль</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.RoleController.Update(Domain.Models.Role)">
+             <summary>
+             Изменение информации о роли
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                   "roleId": 1,
+                   "roleName": "string",
+                   "createdAt": "2024-09-19T14:05:14.947Z",
+                 }
+            
+             </remarks>
+             <param name="role">Роль</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.RoleController.Delete(System.Int32)">
+            <summary>
+            Удаление роли
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserController.GetAll">
+            <summary>
+            Получение информации о всех пользователях
+            </summary>
+            <returns>Список пользователей</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserController.GetById(System.Int32)">
+            <summary>
+            Получение информации о пользователе по id
+            </summary>
+            <param name="id">ID пользователя</param>
+            <returns>Информация о пользователе</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserController.Add(FumLabAPI.Contracts.User.CreateUserRequest)">
+            <summary>
+            Создание нового пользователя
+            </summary>
+            <param name="user">Данные для создания пользователя</param>
+            <returns>Созданный пользователь</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserController.Update(FumLabAPI.Contracts.User.GetUserResponse)">
+            <summary>
+            Изменение информации о пользователе
+            </summary>
+            <param name="user">Обновляемые данные пользователя</param>
+            <returns>Обновленный пользователь</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Удаление пользователя
+            </summary>
+            <param name="id">ID пользователя</param>
+            <returns>Успешное удаление</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserRoleController.GetAll">
+            <summary>
+            Получение информации о всех ролях 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserRoleController.GetById(System.Int32)">
+            <summary>
+            Получение информации о ролях по id
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserRoleController.Add(Domain.Models.UserRole)">
+             <summary>
+             Создание новой роли
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                   "userId": 1,
+                   "roleId": 1,
+                   ??? my db fucking sucks
+                 }
+            
+             </remarks>
+             <param name="userRole">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserRoleController.Update(Domain.Models.UserRole)">
+             <summary>
+             Изменение информации о ролях
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /Todo
+                 {
+                 "userRoleId": 1,
+                 "userId": 1,
+                 "roleId": 1,
+                 "assignedAt": "2024-09-19T14:05:14.947Z",
+                 }
+            
+             </remarks>
+             <param name="userRole">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.UserRoleController.Delete(System.Int32)">
+            <summary>
+            Удаление роли
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

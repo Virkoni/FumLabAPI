@@ -12,7 +12,7 @@ namespace DataAccess.Repositories
 {
     public class FilesRepository : RepositoryBase<Domain.Models.File>, IFilesRepository
     {
-        public FilesRepository(PetshopContext repositoryContext)
+        public FilesRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

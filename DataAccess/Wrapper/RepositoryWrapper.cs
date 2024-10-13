@@ -12,31 +12,33 @@ namespace DataAccess.Wrapper
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
-        private PetshopContext _repoContext;
+        private FumLabContext _repoContext;
 
         private IUserRepository _user;
         private IRoleRepository _role;
         private IUserRoleRepository _userRole;
-
         private ICategoriesRepository _category;
         private IProductsRepository _product;
-        private IPetsRepository _pet;
         private IOrdersRepository _order;
         private IOrderItemsRepository _orderItem;
         private IFilesRepository _file;
         private IFilePermissionsRepository _filePermission;
         private IMessagesRepository _message;
-        private ISuppliersRepository _supplier;
-        private IProductSuppliersRepository _productSupplier;
-        private IServiceRepository _service;
-        private IAppointmentsRepository _appointment;
         private IInventoryRepository _inventory;
         private IPaymentMethodsRepository _paymentMethod;
         private IPaymentsRepository _payment;
         private IReviewsRepository _review;
-        private IDiscountsRepository _discount;
-        private IDiscountUsageRepository _discountUsage; 
-        private IBreedsRepository _breed;
+
+        private IProductAvailabilityRepository _productAvailability;
+        private IProductArtistsRepository _productArtist;
+        private ICartsRepository _cart;
+        private ICartItemsRepository _cartItem;
+        private IPlushPartCategoriesRepository _plushPartCategory;
+        private IPlushPartsRepository _plushPart;
+        private ICustomPlushOrdersRepository _customPlushOrder;
+        private ICustomPlushOrderPartsRepository _customPlushOrderPart;
+        private IArtistsRepository _artist;
+
 
 
 
@@ -88,14 +90,6 @@ namespace DataAccess.Wrapper
                 return _product;
             }
         }
-        public IPetsRepository Pet
-        {
-            get
-            {
-                if (_pet == null) { _pet = new PetsRepository(_repoContext); }
-                return _pet;
-            }
-        }
         public IOrdersRepository Order
         {
             get
@@ -137,41 +131,6 @@ namespace DataAccess.Wrapper
                 return _message;
             }
         }
-        public ISuppliersRepository Supplier
-        {
-            get
-            {
-                if (_supplier == null) { _supplier = new SuppliersRepository(_repoContext); }
-                return _supplier;
-            }
-        }
-
-        public IProductSuppliersRepository ProductSupplier
-        {
-            get
-            {
-                if (_productSupplier == null) { _productSupplier = new ProductSuppliersRepository(_repoContext); }
-                return _productSupplier;
-            }
-        }
-
-        public IServiceRepository Service
-        {
-            get
-            {
-                if (_service == null) { _service = new ServiceRepository(_repoContext); }
-                return _service;
-            }
-        }
-
-        public IAppointmentsRepository Appointment
-        {
-            get
-            {
-                if (_appointment == null) { _appointment = new AppointmentsRepository(_repoContext); }
-                return _appointment;
-            }
-        }
 
         public IInventoryRepository Inventory
         {
@@ -209,34 +168,91 @@ namespace DataAccess.Wrapper
             }
         }
 
-        public IDiscountsRepository Discount
+
+        public IProductArtistsRepository ProductArtist
         {
             get
             {
-                if (_discount == null) { _discount = new DiscountsRepository(_repoContext); }
-                return _discount;
+                if (_productArtist == null) { _productArtist = new ProductArtistsRepository(_repoContext); }
+                return _productArtist;
             }
         }
 
-        public IDiscountUsageRepository DiscountUsage
+        public ICartsRepository Cart
         {
             get
             {
-                if (_discountUsage == null) { _discountUsage = new DiscountUsageRepository(_repoContext); }
-                return _discountUsage;
+                if (_cart == null) { _cart = new CartsRepository(_repoContext); }
+                return _cart;
             }
         }
-        public IBreedsRepository Breed
+
+        public ICartItemsRepository CartItem
         {
             get
             {
-                if (_breed == null) { _breed = new BreedsRepository(_repoContext); }
-                return _breed;
+                if (_cartItem == null) { _cartItem = new CartItemsRepository(_repoContext); }
+                return _cartItem;
+            }
+        }
+
+        public IPlushPartCategoriesRepository PlushPartCategory
+        {
+            get
+            {
+                if (_plushPartCategory == null) { _plushPartCategory = new PlushPartCategoriesRepository(_repoContext); }
+                return _plushPartCategory;
+            }
+        }
+
+        public IPlushPartsRepository PlushPart
+        {
+            get
+            {
+                if (_plushPart == null) { _plushPart = new PlushPartsRepository(_repoContext); }
+                return _plushPart;
+            }
+        }
+
+        public ICustomPlushOrdersRepository CustomPlushOrder
+        {
+            get
+            {
+                if (_customPlushOrder == null) { _customPlushOrder = new CustomPlushOrderRepository(_repoContext); }
+                return _customPlushOrder;
+            }
+        }
+
+        public ICustomPlushOrderPartsRepository CustomPlushOrderPart
+        {
+            get
+            {
+                if (_customPlushOrderPart == null) { _customPlushOrderPart = new CustomPlushOrderPartsRepository(_repoContext); }
+                return _customPlushOrderPart;
+            }
+        }
+
+        public IArtistsRepository Artist
+        {
+            get
+            {
+                if (_artist == null) { _artist = new ArtistsRepository(_repoContext); }
+                return _artist;
             }
         }
 
 
-        public RepositoryWrapper(PetshopContext repositoryContext)
+        public IProductAvailabilityRepository ProductAvailability
+        {
+            get
+            {
+                if (_productAvailability == null) { _productAvailability = new ProductAvailabilityRepository(_repoContext); }
+                return _productAvailability;
+            }
+        }
+
+
+        public RepositoryWrapper(FumLabContext repositoryContext)
         {
             _repoContext = repositoryContext;
         }

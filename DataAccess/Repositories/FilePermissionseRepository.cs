@@ -12,7 +12,7 @@ namespace DataAccess.Repositories
 {
     public class FilePermissionseRepository : RepositoryBase<FilePermission>, IFilePermissionsRepository
     {
-        public FilePermissionseRepository(PetshopContext repositoryContext)
+        public FilePermissionseRepository(FumLabContext repositoryContext)
           : base(repositoryContext)
         {
         }

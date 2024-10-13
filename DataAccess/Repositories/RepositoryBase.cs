@@ -12,9 +12,9 @@ namespace DataAccess.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected PetshopContext RepositoryContext { get; set; }
+        protected FumLabContext RepositoryContext { get; set; }
 
-        public RepositoryBase(PetshopContext repositoryContext)    
+        public RepositoryBase(FumLabContext repositoryContext)    
         { 
             RepositoryContext = repositoryContext; 
         }
