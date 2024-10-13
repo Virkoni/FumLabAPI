@@ -141,3 +141,7 @@ E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\bin\Debug\net8.0\DataAccess.pd
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\bin\Debug\net8.0\Domain.pdb
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.MvcApplicationPartsAssemblyInfo.cs
 E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.sourcelink.json
+E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\bin\Debug\net8.0\PetShopAPI.xml
+E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\bin\Debug\net8.0\Mapster.dll
+E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\bin\Debug\net8.0\Mapster.Core.dll
+E:\crapik\sharag2\DATABASES\sol badguy\PetShopAPI\obj\Debug\net8.0\PetShopAPI.xml
