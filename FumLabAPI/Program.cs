@@ -17,10 +17,11 @@ namespace FumLabAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddDbContext<FumLabContext>(
-                optionsAction: options => options.UseSqlServer(
-                    connectionString: "Server=.;Database=FumLab;TrustServerCertificate=True;Trusted_Connection=True"));
-             
+            builder.Services.AddDbContext<FumLabContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("Server=.;Database=FumLab;TrustServerCertificate=True;Trusted_Connection=True"),
+                b => b.MigrationsAssembly("DataAccess")));
+
+
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
 
