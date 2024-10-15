@@ -1,6 +1,6 @@
-﻿
-using Domain.Interfaces;
+﻿using Domain.Interfaces;
 using Domain.Models;
+using System;
 
 namespace BusinessLogic.Services
 {
@@ -15,24 +15,71 @@ namespace BusinessLogic.Services
 
         public async Task<List<User>> GetAll()
         {
-            return await _repositoryWrapper.User.FindAll();
+            // Exclude deleted users (IsDeleted = 1)
+            return await _repositoryWrapper.User
+                .FindByCondition(x => x.IsDeleted == false);
         }
 
         public async Task<User> GetById(int id)
         {
             var user = await _repositoryWrapper.User
-                .FindByCondition(x => x.UserId == id);
+                .FindByCondition(x => x.UserId == id && x.IsDeleted == false);
+
+            if (user is null || user.Count == 0)
+            {
+                throw new ArgumentNullException("User not found");
+            }
+
             return user.First();
         }
 
         public async Task Create(User model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            // Ensure required fields are present
+            if (string.IsNullOrEmpty(model.Username))
+            {
+                throw new ArgumentException("Username is required");
+            }
+
+            if (string.IsNullOrEmpty(model.PasswordHash))
+            {
+                throw new ArgumentException("Password is required");
+            }
+
+            if (string.IsNullOrEmpty(model.Email))
+            {
+                throw new ArgumentException("Email is required");
+            }
+
+            model.CreatedAt = DateTime.Now;
+            model.IsDeleted = false;
+
             await _repositoryWrapper.User.Create(model);
             _repositoryWrapper.Save();
         }
 
         public async Task Update(User model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            var existingUser = await _repositoryWrapper.User
+                .FindByCondition(x => x.UserId == model.UserId && x.IsDeleted == false);
+
+            if (existingUser is null || existingUser.Count == 0)
+            {
+                throw new ArgumentNullException("User not found");
+            }
+
+            model.UpdatedAt = DateTime.Now;
+
             _repositoryWrapper.User.Update(model);
             _repositoryWrapper.Save();
         }
@@ -40,9 +87,18 @@ namespace BusinessLogic.Services
         public async Task Delete(int id)
         {
             var user = await _repositoryWrapper.User
-                .FindByCondition(x => x.UserId == id);
+                .FindByCondition(x => x.UserId == id && x.IsDeleted == false);
 
-            _repositoryWrapper.User.Delete(user.First());
+            if (user is null || user.Count == 0)
+            {
+                throw new ArgumentNullException("User not found");
+            }
+
+            var userToDelete = user.First();
+            userToDelete.IsDeleted = true;  // Soft delete
+            userToDelete.UpdatedAt = DateTime.Now;
+
+            _repositoryWrapper.User.Update(userToDelete);
             _repositoryWrapper.Save();
         }
     }

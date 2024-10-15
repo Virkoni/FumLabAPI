@@ -1,8 +1,9 @@
 ﻿using BusinessLogic.Services;
 using Domain.Models;
 using Domain.Interfaces;
+using FumLabAPI.Contracts.Reviews;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace FumLabAPI.Controllers
 {
@@ -20,104 +21,62 @@ namespace FumLabAPI.Controllers
         /// <summary>
         /// Получение информации о всех отзывах
         /// </summary>
-        /// <returns></returns>
-
-        // GET api/<ReviewsController>
-
+        /// <returns>Список отзывов</returns>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _reviewsService.GetAll());
+            var reviews = await _reviewsService.GetAll();
+            return Ok(reviews.Adapt<List<GetReviewResponse>>());
         }
 
         /// <summary>
-        /// Получение информации об отзывах по id
+        /// Получение информации об отзыве по id
         /// </summary>
-        /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // GET api/<ReviewsController>
-
+        /// <param name="id">ID отзыва</param>
+        /// <returns>Информация об отзыве</returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var review = await _reviewsService.GetById(id);
-            if (review == null) return NotFound();
-            return Ok(review);
+            return Ok(review.Adapt<GetReviewResponse>());
         }
 
         /// <summary>
         /// Создание нового отзыва
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /Todo
-        ///     {
-        ///       "productId": 1,  
-        ///       "petId": 1,
-        ///       "serviceId": 1,
-        ///       "rating": 1,
-        ///       "ratingText": "string",
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="review">Отзыв</param>
-        /// <returns></returns>
-
-        // POST api/<ReviewsController>
-
+        /// <param name="request">Данные для создания отзыва</param>
+        /// <returns>Созданный отзыв</returns>
         [HttpPost]
-        public async Task<IActionResult> Add(Review review)
+        public async Task<IActionResult> Add(CreateReviewRequest request)
         {
-            await _reviewsService.Create(review);
-            return Ok();
+            var dto = request.Adapt<Review>();
+            await _reviewsService.Create(dto);
+            return Ok(dto.Adapt<GetReviewResponse>());
         }
 
         /// <summary>
-        /// Изменение информации об отзыве
+        /// Обновление информации об отзыве
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///       "userId": 1,  
-        ///       "productId": 1,  
-        ///       "petId": 1,
-        ///       "serviceId": 1,
-        ///       "rating": 1,
-        ///       "ratingText": "string",
-        ///       "createdAt": "2024-09-19T14:05:14.947Z",
-        ///       "isDeleted": 1,
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="review">Отзыв</param>
-        /// <returns></returns>
-
-        // PUT api/<ReviewsController>
-
+        /// <param name="request">Обновляемые данные о отзыве</param>
+        /// <returns>Обновленный отзыв</returns>
         [HttpPut]
-        public async Task<IActionResult> Update(Review review)
+        public async Task<IActionResult> Update(GetReviewResponse request)
         {
-            await _reviewsService.Update(review);
-            return Ok();
+            var dto = request.Adapt<Review>();
+            await _reviewsService.Update(dto);
+            return Ok(dto.Adapt<GetReviewResponse>());
         }
 
         /// <summary>
         /// Удаление отзыва
         /// </summary>
-        /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // DELETE api/<ReviewsController>
-
+        /// <param name="id">ID отзыва</param>
+        /// <returns>Успешное удаление</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _reviewsService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }
