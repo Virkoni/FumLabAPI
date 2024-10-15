@@ -1,8 +1,10 @@
 ﻿using BusinessLogic.Services;
 using Domain.Models;
 using Domain.Interfaces;
+using FumLabAPI.Contracts.File;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
+using FumLabAPI.Contracts.Roles;
 
 namespace FumLabAPI.Controllers
 {
@@ -12,111 +14,76 @@ namespace FumLabAPI.Controllers
     {
         private readonly IFilesService _filesService;
 
-        public FilesController(IFilesService fileService)
+        public FilesController(IFilesService filesService)
         {
-            _filesService = fileService;
+            _filesService = filesService;
         }
 
         /// <summary>
         /// Получение информации о всех файлах
         /// </summary>
-        /// <returns></returns>
-
-        // GET api/<FilesController>
+        /// <returns>Список файлов</returns>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _filesService.GetAll());
+            var files = await _filesService.GetAll();
+            return Ok(files.Adapt<List<GetFileResponse>>());
         }
 
         /// <summary>
         /// Получение информации о файле по id
         /// </summary>
-        /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // GET api/<FilesController>
+        /// <param name="id">ID файла</param>
+        /// <returns>Информация о файле</returns>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var file = await _filesService.GetById(id);
             if (file == null) return NotFound();
-            return Ok(file);
+            return Ok(file.Adapt<GetFileResponse>());
         }
 
         /// <summary>
-        /// Создание нового файла
+        /// Загрузка нового файла
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /Todo
-        ///     {
-        ///      "nameFile": "string",
-        ///      "filePath": "string",
-        ///      "fileType": "string",
-        ///      "uploadedBy": 0
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="file">Файл</param>
-        /// <returns></returns>
-
-        // POST api/<FilesController>
+        /// <param name="request">Запрос с данными файла</param>
+        /// <returns>Загруженный файл</returns>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Domain.Models.File file)
+        public async Task<IActionResult> Upload(CreateFileRequest request)
         {
-            await _filesService.Create(file);
-            return Ok();
+            var dto = request.Adapt<Domain.Models.File>();
+            await _filesService.Update(dto);
+            return Ok(dto.Adapt<GetFileResponse>());
         }
 
         /// <summary>
-        /// Изменение информации о файле
+        /// Обновление информации о файле
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///      "fileId": 1,
-        ///      "nameFile": "string",
-        ///      "filePath": "string",
-        ///      "fileType": "string",
-        ///       "uploadedBy": 0
-        ///       "createdAt": "2024-09-19T14:05:14.947Z",
-        ///       "updatedAt": "2024-09-19T14:05:14.947Z",
-        ///       "isDeleted": 1,
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="file">Файл</param>
-        /// <returns></returns>
-
-        // PUT api/<FilesController>
+        /// <param name="request">Обновляемые данные файла</param>
+        /// <returns>Обновленный файл</returns>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Domain.Models.File file)
+        public async Task<IActionResult> Update(GetFileResponse request)
         {
-            await _filesService.Update(file);
-            return Ok();
+            var dto = request.Adapt<Domain.Models.File>();
+            await _filesService.Update(dto);
+            return Ok(dto.Adapt<GetFileResponse>());
         }
 
         /// <summary>
         /// Удаление файла
         /// </summary>
-        /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // DELETE api/<FilesController>
+        /// <param name="id">ID файла</param>
+        /// <returns>Успешное удаление</returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _filesService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }

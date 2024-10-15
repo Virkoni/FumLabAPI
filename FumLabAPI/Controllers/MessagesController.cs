@@ -1,8 +1,8 @@
-﻿using BusinessLogic.Services;
+﻿using Domain.Interfaces;
 using Domain.Models;
-using Domain.Interfaces;
+using FumLabAPI.Contracts.Message;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace FumLabAPI.Controllers
 {
@@ -20,102 +20,68 @@ namespace FumLabAPI.Controllers
         /// <summary>
         /// Получение информации о всех сообщениях
         /// </summary>
-        /// <returns></returns>
-
-        // GET api/<MessageController>
+        /// <returns>Список сообщений</returns>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _messagesService.GetAll());
+            var messages = await _messagesService.GetAll();
+            return Ok(messages.Adapt<List<GetMessageResponse>>());
         }
 
         /// <summary>
         /// Получение информации о сообщении по id
         /// </summary>
         /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // GET api/<MessageController>
+        /// <returns>Информация о сообщении</returns>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var message = await _messagesService.GetById(id);
             if (message == null) return NotFound();
-            return Ok(message);
+            return Ok(message.Adapt<GetMessageResponse>());
         }
 
         /// <summary>
         /// Создание нового сообщения
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /Todo
-        ///     {
-        ///        "senderId": 1,
-        ///        "receiverId": 1,
-        ///        "messageText": "string",
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="message">Сообщение</param>
-        /// <returns></returns>
-
-        // POST api/<MessageController>
+        /// <param name="request">Данные для создания сообщения</param>
+        /// <returns>Созданное сообщение</returns>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Message message)
+        public async Task<IActionResult> Add(CreateMessageRequest request)
         {
-            await _messagesService.Create(message);
-            return Ok();
+            var dto = request.Adapt<Message>();
+            await _messagesService.Create(dto);
+            return Ok(dto.Adapt<GetMessageResponse>());
         }
 
-
         /// <summary>
-        /// Изменение информации о сообщении
+        /// Обновление информации о сообщении
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///        "messageId": 1,
-        ///        "senderId": 1,
-        ///        "receiverId": 1,
-        ///        "messageText": "string",
-        ///        "sentAt": "2024-09-19T14:05:14.947Z",
-        ///        "isDeleted": 1
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="message">Сообщение</param>
-        /// <returns></returns>
-
-        // PUT api/<MessageController>
+        /// <param name="request">Обновляемые данные сообщения</param>
+        /// <returns>Обновленное сообщение</returns>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Message message)
+        public async Task<IActionResult> Update(GetMessageResponse request)
         {
-            await _messagesService.Update(message);
-            return Ok();
+            var dto = request.Adapt<Message>();
+            await _messagesService.Update(dto);
+            return Ok(dto.Adapt<GetMessageResponse>());
         }
 
         /// <summary>
-        /// Удаление сообщений
+        /// Удаление сообщения
         /// </summary>
         /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // DELETE api/<MessageController>
-
+        /// <returns>Успешное удаление</returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _messagesService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }

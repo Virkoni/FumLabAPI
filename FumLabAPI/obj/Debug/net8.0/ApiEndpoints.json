@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "FumLabAPI.Controllers.ArtistsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ArtistsController",
+    "Method": "Create",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artist",
+        "Type": "FumLabAPI.Contracts.Artists.CreateArtistsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ArtistsController",
+    "Method": "Update",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artist",
+        "Type": "FumLabAPI.Contracts.Artists.GetArtistsResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ArtistsController",
+    "Method": "GetById",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ArtistsController",
+    "Method": "Delete",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FumLabAPI.Controllers.CategoriesController",
     "Method": "GetAll",
     "RelativePath": "api/Categories",
@@ -18,8 +92,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "category",
-        "Type": "Domain.Models.Category",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Categories.CreateCategoryRequest",
         "IsRequired": true
       }
     ],
@@ -34,8 +108,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "category",
-        "Type": "Domain.Models.Category",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Categories.GetCategoryResponse",
         "IsRequired": true
       }
     ],
@@ -74,9 +148,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FumLabAPI.Controllers.FilePermissionsController",
+    "ContainingType": "FumLabAPI.Controllers.CustomPlushOrdersController",
     "Method": "GetAll",
-    "RelativePath": "api/FilePermissions",
+    "RelativePath": "api/CustomPlushOrders",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -84,41 +158,41 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FumLabAPI.Controllers.FilePermissionsController",
+    "ContainingType": "FumLabAPI.Controllers.CustomPlushOrdersController",
     "Method": "Add",
-    "RelativePath": "api/FilePermissions",
+    "RelativePath": "api/CustomPlushOrders",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "filePermission",
-        "Type": "Domain.Models.FilePermission",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.CustomPlushOrders.CreateCustomPlushOrdersRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FumLabAPI.Controllers.FilePermissionsController",
+    "ContainingType": "FumLabAPI.Controllers.CustomPlushOrdersController",
     "Method": "Update",
-    "RelativePath": "api/FilePermissions",
+    "RelativePath": "api/CustomPlushOrders",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "filePermission",
-        "Type": "Domain.Models.FilePermission",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.CustomPlushOrders.GetCustomPlushOrdersResponse",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FumLabAPI.Controllers.FilePermissionsController",
+    "ContainingType": "FumLabAPI.Controllers.CustomPlushOrdersController",
     "Method": "GetById",
-    "RelativePath": "api/FilePermissions/{id}",
+    "RelativePath": "api/CustomPlushOrders/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -132,9 +206,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FumLabAPI.Controllers.FilePermissionsController",
+    "ContainingType": "FumLabAPI.Controllers.CustomPlushOrdersController",
     "Method": "Delete",
-    "RelativePath": "api/FilePermissions/{id}",
+    "RelativePath": "api/CustomPlushOrders/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -159,15 +233,15 @@
   },
   {
     "ContainingType": "FumLabAPI.Controllers.FilesController",
-    "Method": "Add",
+    "Method": "Upload",
     "RelativePath": "api/Files",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "file",
-        "Type": "Domain.Models.File",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.File.CreateFileRequest",
         "IsRequired": true
       }
     ],
@@ -182,8 +256,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "file",
-        "Type": "Domain.Models.File",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.File.GetFileResponse",
         "IsRequired": true
       }
     ],
@@ -240,8 +314,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "inventory",
-        "Type": "Domain.Models.Inventory",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Inventory.CreateInventoryRequest",
         "IsRequired": true
       }
     ],
@@ -256,8 +330,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "inventory",
-        "Type": "Domain.Models.Inventory",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Inventory.GetInventoryResponse",
         "IsRequired": true
       }
     ],
@@ -314,8 +388,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "message",
-        "Type": "Domain.Models.Message",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Message.CreateMessageRequest",
         "IsRequired": true
       }
     ],
@@ -330,8 +404,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "message",
-        "Type": "Domain.Models.Message",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Message.GetMessageResponse",
         "IsRequired": true
       }
     ],
@@ -370,80 +444,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FumLabAPI.Controllers.OrderItemsController",
-    "Method": "GetAll",
-    "RelativePath": "api/OrderItems",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FumLabAPI.Controllers.OrderItemsController",
-    "Method": "Add",
-    "RelativePath": "api/OrderItems",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderItem",
-        "Type": "Domain.Models.OrderItem",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FumLabAPI.Controllers.OrderItemsController",
-    "Method": "Update",
-    "RelativePath": "api/OrderItems",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "orderItem",
-        "Type": "Domain.Models.OrderItem",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FumLabAPI.Controllers.OrderItemsController",
-    "Method": "GetById",
-    "RelativePath": "api/OrderItems/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FumLabAPI.Controllers.OrderItemsController",
-    "Method": "Delete",
-    "RelativePath": "api/OrderItems/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "FumLabAPI.Controllers.OrdersController",
     "Method": "GetAll",
     "RelativePath": "api/Orders",
@@ -462,8 +462,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "order",
-        "Type": "Domain.Models.Order",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Orders.CreateOrderRequest",
         "IsRequired": true
       }
     ],
@@ -478,8 +478,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "order",
-        "Type": "Domain.Models.Order",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Orders.GetOrderResponse",
         "IsRequired": true
       }
     ],
@@ -518,80 +518,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FumLabAPI.Controllers.PaymentMethodsController",
-    "Method": "GetAll",
-    "RelativePath": "api/PaymentMethods",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FumLabAPI.Controllers.PaymentMethodsController",
-    "Method": "Add",
-    "RelativePath": "api/PaymentMethods",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "paymentMethod",
-        "Type": "Domain.Models.PaymentMethod",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FumLabAPI.Controllers.PaymentMethodsController",
-    "Method": "Update",
-    "RelativePath": "api/PaymentMethods",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "paymentMethod",
-        "Type": "Domain.Models.PaymentMethod",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FumLabAPI.Controllers.PaymentMethodsController",
-    "Method": "GetById",
-    "RelativePath": "api/PaymentMethods/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FumLabAPI.Controllers.PaymentMethodsController",
-    "Method": "Delete",
-    "RelativePath": "api/PaymentMethods/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "FumLabAPI.Controllers.PaymentsController",
     "Method": "GetAll",
     "RelativePath": "api/Payments",
@@ -610,8 +536,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "payment",
-        "Type": "Domain.Models.Payment",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Payment.CreatePaymentRequest",
         "IsRequired": true
       }
     ],
@@ -626,8 +552,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "payment",
-        "Type": "Domain.Models.Payment",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Payment.GetPaymentResponse",
         "IsRequired": true
       }
     ],
@@ -980,8 +906,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userRole",
-        "Type": "Domain.Models.UserRole",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.UserRole.CreateUserRoleRequest",
         "IsRequired": true
       }
     ],
@@ -996,8 +922,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userRole",
-        "Type": "Domain.Models.UserRole",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.UserRole.GetUserRoleResponse",
         "IsRequired": true
       }
     ],

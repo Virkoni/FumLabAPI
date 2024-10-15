@@ -1,8 +1,9 @@
 ﻿using BusinessLogic.Services;
 using Domain.Models;
 using Domain.Interfaces;
+using FumLabAPI.Contracts.Categories;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace FumLabAPI.Controllers
 {
@@ -20,99 +21,68 @@ namespace FumLabAPI.Controllers
         /// <summary>
         /// Получение информации о всех категориях
         /// </summary>
-        /// <returns></returns>
-
-        // GET api/<CategoriesController>
+        /// <returns>Список категорий</returns>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _categoriesService.GetAll());
+            var categories = await _categoriesService.GetAll();
+            return Ok(categories.Adapt<List<GetCategoryResponse>>());
         }
 
         /// <summary>
         /// Получение информации о категории по id
         /// </summary>
-        /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // GET api/<CategoriesController>
+        /// <param name="id">ID категории</param>
+        /// <returns>Информация о категории</returns>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var category = await _categoriesService.GetById(id);
             if (category == null) return NotFound();
-            return Ok(category);
+            return Ok(category.Adapt<GetCategoryResponse>());
         }
 
         /// <summary>
         /// Создание новой категории
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /Todo
-        ///     {
-        ///       "categoryName": "string",
-        ///       "Description": "string",
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="category">Категория</param>
-        /// <returns></returns>
-
-        // POST api/<CategoriesController>
+        /// <param name="request">Данные для создания категории</param>
+        /// <returns>Созданная категория</returns>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Category category)
+        public async Task<IActionResult> Add(CreateCategoryRequest request)
         {
-            await _categoriesService.Create(category);
-            return Ok();
+            var dto = request.Adapt<Category>();
+            await _categoriesService.Create(dto);
+            return Ok(dto.Adapt<GetCategoryResponse>());
         }
 
         /// <summary>
-        /// Изменение информации о категориях
+        /// Обновление информации о категории
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///       "categoryId": 1,
-        ///       "categoryName": "string",
-        ///       "Description": "string",
-        ///       "createdAt": "2024-09-19T14:05:14.947Z",
-        ///       "updatedAt": "2024-09-19T14:05:14.947Z",
-        ///       "isDeleted": 1,
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="category">Категория</param>
-        /// <returns></returns>
-
-        // PUT api/<CategoriesController>
+        /// <param name="request">Обновляемые данные категории</param>
+        /// <returns>Обновленная категория</returns>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Category category)
+        public async Task<IActionResult> Update(GetCategoryResponse request)
         {
-            await _categoriesService.Update(category);
-            return Ok();
+            var dto = request.Adapt<Category>();
+            await _categoriesService.Update(dto);
+            return Ok(dto.Adapt<GetCategoryResponse>());
         }
 
         /// <summary>
         /// Удаление категории
         /// </summary>
-        /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // DELETE api/<CategoriesController>
+        /// <param name="id">ID категории</param>
+        /// <returns>Успешное удаление</returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _categoriesService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using BusinessLogic.Services;
+﻿using Domain.Interfaces;
 using Domain.Models;
-using Domain.Interfaces;
+using FumLabAPI.Contracts.Orders;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace FumLabAPI.Controllers
 {
@@ -20,99 +20,68 @@ namespace FumLabAPI.Controllers
         /// <summary>
         /// Получение информации о всех заказах
         /// </summary>
-        /// <returns></returns>
-
-        // GET api/<OrdersController>
+        /// <returns>Список заказов</returns>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _orderService.GetAll());
+            var orders = await _orderService.GetAll();
+            return Ok(orders.Adapt<List<GetOrderResponse>>());
         }
 
         /// <summary>
         /// Получение информации о заказе по id
         /// </summary>
         /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // GET api/<OrdersController>
+        /// <returns>Информация об заказе</returns>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var order = await _orderService.GetById(id);
             if (order == null) return NotFound();
-            return Ok(order);
+            return Ok(order.Adapt<GetOrderResponse>());
         }
 
         /// <summary>
         /// Создание нового заказа
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /Todo
-        ///     {
-        ///         "userId": 1,
-        ///         "totalAmount": decimal,
-        ///         "orderDate": "2024-09-19T14:05:14.947Z"
-        ///     }
-        /// </remarks>
-        /// <param name="order">Заказ</param>
-        /// <returns></returns>
-
-        // POST api/<OrdersController>
+        /// <param name="request">Данные для создания заказа</param>
+        /// <returns>Созданный заказ</returns>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Order order)
+        public async Task<IActionResult> Add(CreateOrderRequest request)
         {
-            await _orderService.Create(order);
-            return Ok();
+            var dto = request.Adapt<Order>();
+            await _orderService.Create(dto);
+            return Ok(dto.Adapt<GetOrderResponse>());
         }
 
         /// <summary>
-        /// Изменение информации о заказе
+        /// Обновление информации о заказе
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///       "orderId": 1,
-        ///       "userId": 1,
-        ///       "totalAmount": decimal,
-        ///       "orderDate": "2024-09-19T14:05:14.947Z",
-        ///       "isDeleted": 1,
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="order">Заказ</param>
-        /// <returns></returns>
-
-        // PUT api/<OrdersController>
-
+        /// <param name="request">Обновляемые данные о заказе</param>
+        /// <returns>Обновленный заказ</returns>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Order order)
+        public async Task<IActionResult> Update(GetOrderResponse request)
         {
-            await _orderService.Update(order);
-            return Ok();
+            var dto = request.Adapt<Order>();
+            await _orderService.Update(dto);
+            return Ok(dto.Adapt<GetOrderResponse>());
         }
 
         /// <summary>
         /// Удаление заказа
         /// </summary>
         /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // DELETE api/<OrdersController>
+        /// <returns>Успешное удаление</returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _orderService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }

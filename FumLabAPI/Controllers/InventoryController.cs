@@ -1,8 +1,8 @@
-﻿using BusinessLogic.Services;
+﻿using Domain.Interfaces;
 using Domain.Models;
-using Domain.Interfaces;
+using FumLabAPI.Contracts.Inventory;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace FumLabAPI.Controllers
 {
@@ -18,99 +18,70 @@ namespace FumLabAPI.Controllers
         }
 
         /// <summary>
-        /// Получение информации о всем инвентаре 
+        /// Получение информации о всем инвентаре
         /// </summary>
-        /// <returns></returns>
-
-        // GET api/<InventoryController>
+        /// <returns>Список товаров</returns>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _inventoryService.GetAll());
+            var inventories = await _inventoryService.GetAll();
+            return Ok(inventories.Adapt<List<GetInventoryResponse>>());
         }
 
         /// <summary>
         /// Получение информации о инвентаре по id
         /// </summary>
         /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // GET api/<InventoryController>
+        /// <returns>Информация об инвентаре</returns>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var inventory = await _inventoryService.GetById(id);
             if (inventory == null) return NotFound();
-            return Ok(inventory);
+            return Ok(inventory.Adapt<GetInventoryResponse>());
         }
 
         /// <summary>
         /// Создание нового инвентаря
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /Todo
-        ///     {
-        ///        "productId" : 1,
-        ///        "quantity" : 3,
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="inventory">Инвентарь</param>
-        /// <returns></returns>
-
-        // POST api/<InventoryController>
+        /// <param name="request">Данные для создания инвентаря</param>
+        /// <returns>Созданный инвентарь</returns>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Inventory inventory)
+        public async Task<IActionResult> Add(CreateInventoryRequest request)
         {
-            await _inventoryService.Create(inventory);
-            return Ok();
+            var dto = request.Adapt<Inventory>();
+            await _inventoryService.Create(dto);
+            return Ok(dto.Adapt<GetInventoryResponse>());
         }
 
         /// <summary>
-        /// Изменение информации об инвентаре
+        /// Обновление информации об инвентаре
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///        "productId" : 1,
-        ///        "quantity" : 3,
-        ///        "lastUpdated": "2024-09-19T14:05:14.947Z",
-        ///        "isDeleted": 1
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="inventory">Инвентарь</param>
-        /// <returns></returns>
-
-        // PUT api/<InventoryController>
+        /// <param name="request">Обновляемые данные инвентаря</param>
+        /// <returns>Обновленный инвентарь</returns>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Inventory inventory)
+        public async Task<IActionResult> Update(GetInventoryResponse request)
         {
-            await _inventoryService.Update(inventory);
-            return Ok();
+            var dto = request.Adapt<Inventory>();
+            await _inventoryService.Update(dto);
+            return Ok(dto.Adapt<GetInventoryResponse>());
         }
 
         /// <summary>
         /// Удаление инвентаря
         /// </summary>
         /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // DELETE api/<InventoryController>
+        /// <returns>Успешное удаление</returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _inventoryService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }

@@ -1,8 +1,11 @@
 ﻿using BusinessLogic.Services;
 using Domain.Models;
 using Domain.Interfaces;
+using FumLabAPI.Contracts.ProductAvailability;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using FumLabAPI.Contracts.Products;
 
 namespace FumLabAPI.Controllers
 {
@@ -17,11 +20,22 @@ namespace FumLabAPI.Controllers
             _productsService = productsService;
         }
 
+        /// <summary>
+        /// Получение информации о всех товарах
+        /// </summary>
+        /// <returns>Список товаров</returns>
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _productsService.GetAll());
         }
+
+        /// <summary>
+        /// Получение информации о товаре по id
+        /// </summary>
+        /// <param name="id">ID</param>
+        /// <returns>Информация о товаре</returns>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -31,25 +45,45 @@ namespace FumLabAPI.Controllers
             return Ok(product);
         }
 
+        /// <summary>
+        /// Создание нового товара
+        /// </summary>
+        /// <param name="request">Данные для создания товара</param>
+        /// <returns>Созданный товар</returns>
+
         [HttpPost]
-        public async Task<IActionResult> Add(Product product)
+        public async Task<IActionResult> Add(CreateProductRequest request)
         {
-            await _productsService.Create(product);
-            return Ok();
+            var dto = request.Adapt<Product>();
+            await _productsService.Create(dto);
+            return Ok(dto);
         }
 
+        /// <summary>
+        /// Обновление информации о товаре
+        /// </summary>
+        /// <param name="request">Обновляемые данные о товаре</param>
+        /// <returns>Обновленный товар</returns>
+
         [HttpPut]
-        public async Task<IActionResult> Update(Product product)
+        public async Task<IActionResult> Update(GetProductResponse request)
         {
-            await _productsService.Update(product);
-            return Ok();
+            var dto = request.Adapt<Product>();
+            await _productsService.Update(dto);
+            return Ok(dto);
         }
+
+        /// <summary>
+        /// Удаление товара
+        /// </summary>
+        /// <param name="id">ID</param>
+        /// <returns>Успешное удаление</returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _productsService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }

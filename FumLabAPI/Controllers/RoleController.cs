@@ -1,8 +1,8 @@
-﻿using BusinessLogic.Services;
+﻿using Domain.Interfaces;
 using Domain.Models;
-using Domain.Interfaces;
+using FumLabAPI.Contracts.Roles;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace FumLabAPI.Controllers
 {
@@ -20,95 +20,62 @@ namespace FumLabAPI.Controllers
         /// <summary>
         /// Получение информации о всех ролях
         /// </summary>
-        /// <returns></returns>
-
-        // GET api/<UserController>
-
+        /// <returns>Список ролей</returns>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _roleService.GetAll());
+            var roles = await _roleService.GetAll();
+            return Ok(roles.Adapt<List<GetRoleResponse>>());
         }
 
         /// <summary>
         /// Получение информации о роли по id
         /// </summary>
-        /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // GET api/<RoleController>
-
+        /// <param name="id">ID роли</param>
+        /// <returns>Информация о роли</returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var role = await _roleService.GetById(id);
-            if (role == null) return NotFound();
-            return Ok(role);
+            return Ok(role.Adapt<GetRoleResponse>());
         }
 
         /// <summary>
         /// Создание новой роли
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /Todo
-        ///     {
-        ///         "roleName": "string",
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="role">Роль</param>
-        /// <returns></returns>
-
-        // POST api/<RoleController>
-
+        /// <param name="request">Данные для создания роли</param>
+        /// <returns>Созданная роль</returns>
         [HttpPost]
-        public async Task<IActionResult> Add(Role role)
+        public async Task<IActionResult> Add(CreateRoleRequest request)
         {
-            await _roleService.Create(role);
-            return Ok();
+            var dto = request.Adapt<Role>();
+            await _roleService.Create(dto);
+            return Ok(dto.Adapt<GetRoleResponse>());
         }
 
         /// <summary>
-        /// Изменение информации о роли
+        /// Обновление информации о роли
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///       "roleId": 1,
-        ///       "roleName": "string",
-        ///       "createdAt": "2024-09-19T14:05:14.947Z",
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="role">Роль</param>
-        /// <returns></returns>
-
-        // PUT api/<RoleController>
-
+        /// <param name="request">Обновляемые данные о роли</param>
+        /// <returns>Обновленная роль</returns>
         [HttpPut]
-        public async Task<IActionResult> Update(Role role)
+        public async Task<IActionResult> Update(GetRoleResponse request)
         {
-            await _roleService.Update(role);
-            return Ok();
+            var dto = request.Adapt<Role>();
+            await _roleService.Update(dto);
+            return Ok(dto.Adapt<GetRoleResponse>());
         }
 
         /// <summary>
         /// Удаление роли
         /// </summary>
-        /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // DELETE api/<UserController>
-
+        /// <param name="id">ID роли</param>
+        /// <returns>Успешное удаление</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _roleService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }

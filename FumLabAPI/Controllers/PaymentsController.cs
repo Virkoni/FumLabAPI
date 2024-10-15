@@ -1,6 +1,8 @@
 ﻿using BusinessLogic.Services;
 using Domain.Models;
 using Domain.Interfaces;
+using FumLabAPI.Contracts.Payment;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -18,102 +20,70 @@ namespace FumLabAPI.Controllers
         }
 
         /// <summary>
-        /// Получение информации о всех платежах
+        /// Получение информации о всех платежей
         /// </summary>
-        /// <returns></returns>
-
-        // GET api/<PaymentsController>
+        /// <returns>Список платежей</returns>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _paymentService.GetAll());
+            var payments = await _paymentService.GetAll();
+            return Ok(payments.Adapt<List<GetPaymentResponse>>());
         }
 
         /// <summary>
-        /// Получение информации о платежах по id
+        /// Получение информации о платеже по id
         /// </summary>
         /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // GET api/<PaymentsController>
+        /// <returns>Информация об платеже</returns>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var paymentMethod = await _paymentService.GetById(id);
             if (paymentMethod == null) return NotFound();
-            return Ok(paymentMethod);
+            return Ok(paymentMethod.Adapt<GetPaymentResponse>());
         }
 
         /// <summary>
         /// Создание нового платежа
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /Todo
-        ///     {
-        ///       "orderId": 1,
-        ///       "paymentMethodId": 1,
-        ///       "amount": decimal,
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="paymentMethod">Платеж</param>
-        /// <returns></returns>
-
-        // POST api/<PaymentsController>
+        /// <param name="request">Данные для создания платежа</param>
+        /// <returns>Созданный платеж</returns>
 
         [HttpPost]
-        public async Task<IActionResult> Add(Payment payment)
+        public async Task<IActionResult> Add(CreatePaymentRequest request)
         {
-            await _paymentService.Create(payment);
-            return Ok();
+            var dto = request.Adapt<Payment>();
+            await _paymentService.Create(dto);
+            return Ok(dto.Adapt<GetPaymentResponse>());
         }
 
         /// <summary>
-        /// Изменение информации о платеже
+        /// Обновление информации о платеже
         /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     PUT /Todo
-        ///     {
-        ///       "paymentId": 1,
-        ///       "orderId": 1,
-        ///       "paymentMethodId": 1,
-        ///       "amount": decimal,
-        ///       "paymentDate": "2024-09-19T14:05:14.947Z",
-        ///       "isDeleted": 1
-        ///     }
-        ///
-        /// </remarks>
-        /// <param name="paymentMethod">Платеж</param>
-        /// <returns></returns>
-
-        // PUT api/<PaymentsController>
+        /// <param name="request">Обновляемые данные о платеже</param>
+        /// <returns>Обновленный платеж</returns>
 
         [HttpPut]
-        public async Task<IActionResult> Update(Payment payment)
+        public async Task<IActionResult> Update(GetPaymentResponse request)
         {
-            await _paymentService.Update(payment);
-            return Ok();
+            var dto = request.Adapt<Payment>();
+            await _paymentService.Update(dto);
+            return Ok(dto.Adapt<GetPaymentResponse>());
         }
 
         /// <summary>
         /// Удаление платежа
         /// </summary>
         /// <param name="id">ID</param>
-        /// <returns></returns>
-
-        // DELETE api/<PaymentsController>
+        /// <returns>Успешное удаление</returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _paymentService.Delete(id);
-            return Ok();
+            return NoContent();
         }
     }
 }

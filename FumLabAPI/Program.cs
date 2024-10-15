@@ -44,7 +44,7 @@ namespace FumLabAPI
                     License = new OpenApiLicense
                     {
                         Name = "Пример лицензии",
-                        Url = new Uri("https://example.com/license")
+                        Url = new Uri("https://tenor.com/bOu5d.gif")
                     }
                 });
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
