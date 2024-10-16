@@ -1,0 +1,19 @@
+name: dotnet format
+
+on:
+  push:
+    paths:
+      - "**.cs"
+      - ".editorconfig"
+
+jobs:
+  check-test:
+    runs-on: windows-latest
+
+    steps:
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Run dotnet test
+        run: dotnet test
