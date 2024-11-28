@@ -4063,11 +4063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "S:\\API\\FumLabAPI\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
+      "projectPath": "S:\\API\\FumLabAPI\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\gnid\\.nuget\\packages\\",
-      "outputPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\obj\\",
+      "outputPath": "S:\\API\\FumLabAPI\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gnid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4085,8 +4085,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj"
+            "S:\\API\\FumLabAPI\\Domain\\Domain.csproj": {
+              "projectPath": "S:\\API\\FumLabAPI\\Domain\\Domain.csproj"
             }
           }
         }

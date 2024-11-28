@@ -70,6 +70,22 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
+            if (string.IsNullOrEmpty(model.Username))
+            {
+                throw new ArgumentException("Username is required");
+            }
+
+            if (string.IsNullOrEmpty(model.PasswordHash))
+            {
+                throw new ArgumentException("Password is required");
+            }
+
+            if (string.IsNullOrEmpty(model.Email))
+            {
+                throw new ArgumentException("Email is required");
+            }
+
+            // Check if the user exists and is not deleted
             var existingUser = await _repositoryWrapper.User
                 .FindByCondition(x => x.UserId == model.UserId && x.IsDeleted == false);
 
@@ -78,8 +94,8 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException("User not found");
             }
 
+            // Update the fields and timestamps
             model.UpdatedAt = DateTime.Now;
-
             _repositoryWrapper.User.Update(model);
             _repositoryWrapper.Save();
         }

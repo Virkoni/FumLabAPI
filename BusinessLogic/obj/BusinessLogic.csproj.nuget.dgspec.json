@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\BusinessLogic.csproj": {}
+    "S:\\API\\FumLabAPI\\BusinessLogic\\BusinessLogic.csproj": {}
   },
   "projects": {
-    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\BusinessLogic.csproj": {
+    "S:\\API\\FumLabAPI\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "S:\\API\\FumLabAPI\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "S:\\API\\FumLabAPI\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\gnid\\.nuget\\packages\\",
-        "outputPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\BusinessLogic\\obj\\",
+        "outputPath": "S:\\API\\FumLabAPI\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gnid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj"
+              "S:\\API\\FumLabAPI\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "S:\\API\\FumLabAPI\\DataAccess\\DataAccess.csproj"
               },
-              "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj"
+              "S:\\API\\FumLabAPI\\Domain\\Domain.csproj": {
+                "projectPath": "S:\\API\\FumLabAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj": {
+    "S:\\API\\FumLabAPI\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "S:\\API\\FumLabAPI\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
+        "projectPath": "S:\\API\\FumLabAPI\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\gnid\\.nuget\\packages\\",
-        "outputPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\obj\\",
+        "outputPath": "S:\\API\\FumLabAPI\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gnid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj"
+              "S:\\API\\FumLabAPI\\Domain\\Domain.csproj": {
+                "projectPath": "S:\\API\\FumLabAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -149,14 +149,14 @@
         }
       }
     },
-    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {
+    "S:\\API\\FumLabAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj",
+        "projectUniqueName": "S:\\API\\FumLabAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj",
+        "projectPath": "S:\\API\\FumLabAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\gnid\\.nuget\\packages\\",
-        "outputPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\obj\\",
+        "outputPath": "S:\\API\\FumLabAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gnid\\AppData\\Roaming\\NuGet\\NuGet.Config",

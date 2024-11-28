@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {}
+    "S:\\API\\FumLabAPI\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj": {
+    "S:\\API\\FumLabAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj",
+        "projectUniqueName": "S:\\API\\FumLabAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\Domain.csproj",
+        "projectPath": "S:\\API\\FumLabAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\gnid\\.nuget\\packages\\",
-        "outputPath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\Domain\\obj\\",
+        "outputPath": "S:\\API\\FumLabAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gnid\\AppData\\Roaming\\NuGet\\NuGet.Config",

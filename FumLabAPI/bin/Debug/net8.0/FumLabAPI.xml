@@ -276,122 +276,209 @@
             <param name="id">ID</param>
             <returns>Успешное удаление</returns>
         </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartCategoriesController.GetAll">
+            <summary>
+            Получение информации о всех категориях частей плюшевых игрушек
+            </summary>
+            <returns>Список категорий частей плюшевых игрушек</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartCategoriesController.GetById(System.Int32)">
+            <summary>
+            Получение информации о категории частей плюшевой игрушки по id
+            </summary>
+            <param name="id">ID</param>
+            <returns>Информация о категории частей плюшевой игрушки</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartCategoriesController.Add(FumLabAPI.Contracts.PlushPartCategories.CreatePlushPartCategoriesRequest)">
+            <summary>
+            Создание новой категории частей плюшевой игрушки
+            </summary>
+            <param name="request">Данные для создания категории</param>
+            <returns>Созданная категория</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartCategoriesController.Update(FumLabAPI.Contracts.PlushPartCategories.GetPlushPartCategoriesResponse)">
+            <summary>
+            Обновление информации о категории частей плюшевой игрушки
+            </summary>
+            <param name="request">Обновляемые данные о категории</param>
+            <returns>Обновленная категория</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartCategoriesController.Delete(System.Int32)">
+            <summary>
+            Удаление категории частей плюшевой игрушки
+            </summary>
+            <param name="id">ID</param>
+            <returns>Успешное удаление</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartsController.GetAll">
+            <summary>
+            Получение информации о всех частях плюшевых игрушек
+            </summary>
+            <returns>Список частей плюшевых игрушек</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartsController.GetById(System.Int32)">
+            <summary>
+            Получение информации о части плюшевой игрушки по id
+            </summary>
+            <param name="id">ID</param>
+            <returns>Информация о части плюшевой игрушки</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartsController.Add(FumLabAPI.Contracts.PlushPart.CreatePlushPartRequest)">
+            <summary>
+            Создание новой части плюшевой игрушки
+            </summary>
+            <param name="request">Данные для создания части</param>
+            <returns>Созданная часть</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartsController.Update(FumLabAPI.Contracts.PlushPart.GetPlushPartResponse)">
+            <summary>
+            Обновление информации о части плюшевой игрушки
+            </summary>
+            <param name="request">Обновляемые данные о части</param>
+            <returns>Обновленная часть</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.PlushPartsController.Delete(System.Int32)">
+            <summary>
+            Удаление части плюшевой игрушки
+            </summary>
+            <param name="id">ID</param>
+            <returns>Успешное удаление</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductAvailabilitiesController.GetAll">
+            <summary>
+            Получение информации о всех доступностях продуктов
+            </summary>
+            <returns>Список доступностей продуктов</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductAvailabilitiesController.GetById(System.Int32)">
+            <summary>
+            Получение информации о доступности продукта по id
+            </summary>
+            <param name="id">ID</param>
+            <returns>Информация о доступности продукта</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductAvailabilitiesController.Add(FumLabAPI.Contracts.ProductAvailability.CreateProductAvailabilityRequest)">
+            <summary>
+            Создание новой доступности продукта
+            </summary>
+            <param name="request">Данные для создания доступности</param>
+            <returns>Созданная доступность</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductAvailabilitiesController.Update(FumLabAPI.Contracts.ProductAvailability.GetProductAvailabilityResponse)">
+            <summary>
+            Обновление информации о доступности продукта
+            </summary>
+            <param name="request">Обновляемые данные о доступности</param>
+            <returns>Обновленная доступность</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductAvailabilitiesController.Delete(System.Int32)">
+            <summary>
+            Удаление доступности продукта
+            </summary>
+            <param name="id">ID</param>
+            <returns>Успешное удаление</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductsController.GetAll">
+            <summary>
+            Получение информации о всех товарах
+            </summary>
+            <returns>Список товаров</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductsController.GetById(System.Int32)">
+            <summary>
+            Получение информации о товаре по id
+            </summary>
+            <param name="id">ID</param>
+            <returns>Информация о товаре</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductsController.Add(FumLabAPI.Contracts.Products.CreateProductRequest)">
+            <summary>
+            Создание нового товара
+            </summary>
+            <param name="request">Данные для создания товара</param>
+            <returns>Созданный товар</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductsController.Update(FumLabAPI.Contracts.Products.GetProductResponse)">
+            <summary>
+            Обновление информации о товаре
+            </summary>
+            <param name="request">Обновляемые данные о товаре</param>
+            <returns>Обновленный товар</returns>
+        </member>
+        <member name="M:FumLabAPI.Controllers.ProductsController.Delete(System.Int32)">
+            <summary>
+            Удаление товара
+            </summary>
+            <param name="id">ID</param>
+            <returns>Успешное удаление</returns>
+        </member>
         <member name="M:FumLabAPI.Controllers.ReviewsController.GetAll">
             <summary>
             Получение информации о всех отзывах
             </summary>
-            <returns></returns>
+            <returns>Список отзывов</returns>
         </member>
         <member name="M:FumLabAPI.Controllers.ReviewsController.GetById(System.Int32)">
             <summary>
-            Получение информации об отзывах по id
+            Получение информации об отзыве по id
             </summary>
-            <param name="id">ID</param>
-            <returns></returns>
+            <param name="id">ID отзыва</param>
+            <returns>Информация об отзыве</returns>
         </member>
-        <member name="M:FumLabAPI.Controllers.ReviewsController.Add(Domain.Models.Review)">
-             <summary>
-             Создание нового отзыва
-             </summary>
-             <remarks>
-             Пример запроса:
-            
-                 POST /Todo
-                 {
-                   "productId": 1,  
-                   "petId": 1,
-                   "serviceId": 1,
-                   "rating": 1,
-                   "ratingText": "string",
-                 }
-            
-             </remarks>
-             <param name="review">Отзыв</param>
-             <returns></returns>
+        <member name="M:FumLabAPI.Controllers.ReviewsController.Add(FumLabAPI.Contracts.Reviews.CreateReviewRequest)">
+            <summary>
+            Создание нового отзыва
+            </summary>
+            <param name="request">Данные для создания отзыва</param>
+            <returns>Созданный отзыв</returns>
         </member>
-        <member name="M:FumLabAPI.Controllers.ReviewsController.Update(Domain.Models.Review)">
-             <summary>
-             Изменение информации об отзыве
-             </summary>
-             <remarks>
-             Пример запроса:
-            
-                 PUT /Todo
-                 {
-                   "userId": 1,  
-                   "productId": 1,  
-                   "petId": 1,
-                   "serviceId": 1,
-                   "rating": 1,
-                   "ratingText": "string",
-                   "createdAt": "2024-09-19T14:05:14.947Z",
-                   "isDeleted": 1,
-                 }
-            
-             </remarks>
-             <param name="review">Отзыв</param>
-             <returns></returns>
+        <member name="M:FumLabAPI.Controllers.ReviewsController.Update(FumLabAPI.Contracts.Reviews.GetReviewResponse)">
+            <summary>
+            Обновление информации об отзыве
+            </summary>
+            <param name="request">Обновляемые данные о отзыве</param>
+            <returns>Обновленный отзыв</returns>
         </member>
         <member name="M:FumLabAPI.Controllers.ReviewsController.Delete(System.Int32)">
             <summary>
             Удаление отзыва
             </summary>
-            <param name="id">ID</param>
-            <returns></returns>
+            <param name="id">ID отзыва</param>
+            <returns>Успешное удаление</returns>
         </member>
         <member name="M:FumLabAPI.Controllers.RoleController.GetAll">
             <summary>
             Получение информации о всех ролях
             </summary>
-            <returns></returns>
+            <returns>Список ролей</returns>
         </member>
         <member name="M:FumLabAPI.Controllers.RoleController.GetById(System.Int32)">
             <summary>
             Получение информации о роли по id
             </summary>
-            <param name="id">ID</param>
-            <returns></returns>
+            <param name="id">ID роли</param>
+            <returns>Информация о роли</returns>
         </member>
-        <member name="M:FumLabAPI.Controllers.RoleController.Add(Domain.Models.Role)">
-             <summary>
-             Создание новой роли
-             </summary>
-             <remarks>
-             Пример запроса:
-            
-                 POST /Todo
-                 {
-                     "roleName": "string",
-                 }
-            
-             </remarks>
-             <param name="role">Роль</param>
-             <returns></returns>
+        <member name="M:FumLabAPI.Controllers.RoleController.Add(FumLabAPI.Contracts.Roles.CreateRoleRequest)">
+            <summary>
+            Создание новой роли
+            </summary>
+            <param name="request">Данные для создания роли</param>
+            <returns>Созданная роль</returns>
         </member>
-        <member name="M:FumLabAPI.Controllers.RoleController.Update(Domain.Models.Role)">
-             <summary>
-             Изменение информации о роли
-             </summary>
-             <remarks>
-             Пример запроса:
-            
-                 PUT /Todo
-                 {
-                   "roleId": 1,
-                   "roleName": "string",
-                   "createdAt": "2024-09-19T14:05:14.947Z",
-                 }
-            
-             </remarks>
-             <param name="role">Роль</param>
-             <returns></returns>
+        <member name="M:FumLabAPI.Controllers.RoleController.Update(FumLabAPI.Contracts.Roles.GetRoleResponse)">
+            <summary>
+            Обновление информации о роли
+            </summary>
+            <param name="request">Обновляемые данные о роли</param>
+            <returns>Обновленная роль</returns>
         </member>
         <member name="M:FumLabAPI.Controllers.RoleController.Delete(System.Int32)">
             <summary>
             Удаление роли
             </summary>
-            <param name="id">ID</param>
-            <returns></returns>
+            <param name="id">ID роли</param>
+            <returns>Успешное удаление</returns>
         </member>
         <member name="M:FumLabAPI.Controllers.UserController.GetAll">
             <summary>

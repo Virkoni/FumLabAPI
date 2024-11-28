@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UT4Nsx0R4+8=",
+  "dgSpecHash": "jnKM9VQJMsk=",
   "success": true,
-  "projectFilePath": "E:\\crapik\\sharag2\\DATABASES\\sol badguy\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "S:\\API\\FumLabAPI\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gnid\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gnid\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

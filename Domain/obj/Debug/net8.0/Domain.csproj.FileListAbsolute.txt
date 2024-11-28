@@ -13,3 +13,18 @@ E:\crapik\sharag2\DATABASES\sol badguy\Domain\bin\Debug\net8.0\Domain.runtimecon
 E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
 E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.sourcelink.json
 E:\crapik\sharag2\DATABASES\sol badguy\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+S:\API\FumLabAPI\Domain\bin\Debug\net8.0\Domain.deps.json
+S:\API\FumLabAPI\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+S:\API\FumLabAPI\Domain\bin\Debug\net8.0\Domain.dll
+S:\API\FumLabAPI\Domain\bin\Debug\net8.0\Domain.pdb
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.dll
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\refint\Domain.dll
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.pdb
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+S:\API\FumLabAPI\Domain\obj\Debug\net8.0\ref\Domain.dll

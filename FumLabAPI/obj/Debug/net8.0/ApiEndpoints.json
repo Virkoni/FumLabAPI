@@ -592,6 +592,228 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartCategoriesController",
+    "Method": "GetAll",
+    "RelativePath": "api/PlushPartCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartCategoriesController",
+    "Method": "Add",
+    "RelativePath": "api/PlushPartCategories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.PlushPartCategories.CreatePlushPartCategoriesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartCategoriesController",
+    "Method": "Update",
+    "RelativePath": "api/PlushPartCategories",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.PlushPartCategories.GetPlushPartCategoriesResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartCategoriesController",
+    "Method": "GetById",
+    "RelativePath": "api/PlushPartCategories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartCategoriesController",
+    "Method": "Delete",
+    "RelativePath": "api/PlushPartCategories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartsController",
+    "Method": "GetAll",
+    "RelativePath": "api/PlushParts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartsController",
+    "Method": "Add",
+    "RelativePath": "api/PlushParts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.PlushPart.CreatePlushPartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartsController",
+    "Method": "Update",
+    "RelativePath": "api/PlushParts",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.PlushPart.GetPlushPartResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartsController",
+    "Method": "GetById",
+    "RelativePath": "api/PlushParts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.PlushPartsController",
+    "Method": "Delete",
+    "RelativePath": "api/PlushParts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ProductAvailabilitiesController",
+    "Method": "GetAll",
+    "RelativePath": "api/ProductAvailabilities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ProductAvailabilitiesController",
+    "Method": "Add",
+    "RelativePath": "api/ProductAvailabilities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.ProductAvailability.CreateProductAvailabilityRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ProductAvailabilitiesController",
+    "Method": "Update",
+    "RelativePath": "api/ProductAvailabilities",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.ProductAvailability.GetProductAvailabilityResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ProductAvailabilitiesController",
+    "Method": "GetById",
+    "RelativePath": "api/ProductAvailabilities/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FumLabAPI.Controllers.ProductAvailabilitiesController",
+    "Method": "Delete",
+    "RelativePath": "api/ProductAvailabilities/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FumLabAPI.Controllers.ProductsController",
     "Method": "GetAll",
     "RelativePath": "api/Products",
@@ -610,8 +832,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "product",
-        "Type": "Domain.Models.Product",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Products.CreateProductRequest",
         "IsRequired": true
       }
     ],
@@ -626,8 +848,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "product",
-        "Type": "Domain.Models.Product",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Products.GetProductResponse",
         "IsRequired": true
       }
     ],
@@ -684,8 +906,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "review",
-        "Type": "Domain.Models.Review",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Reviews.CreateReviewRequest",
         "IsRequired": true
       }
     ],
@@ -700,8 +922,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "review",
-        "Type": "Domain.Models.Review",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Reviews.GetReviewResponse",
         "IsRequired": true
       }
     ],
@@ -758,8 +980,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "role",
-        "Type": "Domain.Models.Role",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Roles.CreateRoleRequest",
         "IsRequired": true
       }
     ],
@@ -774,8 +996,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "role",
-        "Type": "Domain.Models.Role",
+        "Name": "request",
+        "Type": "FumLabAPI.Contracts.Roles.GetRoleResponse",
         "IsRequired": true
       }
     ],

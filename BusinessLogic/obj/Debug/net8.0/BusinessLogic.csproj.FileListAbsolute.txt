@@ -16,3 +16,21 @@ E:\crapik\sharag2\DATABASES\sol badguy\BusinessLogic\obj\Debug\net8.0\Business.C
 E:\crapik\sharag2\DATABASES\sol badguy\BusinessLogic\bin\Debug\net8.0\Domain.dll
 E:\crapik\sharag2\DATABASES\sol badguy\BusinessLogic\bin\Debug\net8.0\Domain.pdb
 E:\crapik\sharag2\DATABASES\sol badguy\BusinessLogic\obj\Debug\net8.0\BusinessLogic.sourcelink.json
+S:\API\FumLabAPI\BusinessLogic\bin\Debug\net8.0\BusinessLogic.deps.json
+S:\API\FumLabAPI\BusinessLogic\bin\Debug\net8.0\BusinessLogic.dll
+S:\API\FumLabAPI\BusinessLogic\bin\Debug\net8.0\BusinessLogic.pdb
+S:\API\FumLabAPI\BusinessLogic\bin\Debug\net8.0\DataAccess.dll
+S:\API\FumLabAPI\BusinessLogic\bin\Debug\net8.0\Domain.dll
+S:\API\FumLabAPI\BusinessLogic\bin\Debug\net8.0\DataAccess.pdb
+S:\API\FumLabAPI\BusinessLogic\bin\Debug\net8.0\Domain.pdb
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.AssemblyReference.cache
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfoInputs.cache
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfo.cs
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.CoreCompileInputs.cache
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.sourcelink.json
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\Business.CF5D6E35.Up2Date
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.dll
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\refint\BusinessLogic.dll
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.pdb
+S:\API\FumLabAPI\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll
