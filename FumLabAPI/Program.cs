@@ -18,12 +18,34 @@ namespace FumLabAPI
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<FumLabContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("Server=.;Database=FumLab;TrustServerCertificate=True;Trusted_Connection=True"),
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly("DataAccess")));
 
-
+            // holy shit 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IArtistsService, ArtistsService>();
+            builder.Services.AddScoped<ICartItemsService, CartItemsService>();
+            builder.Services.AddScoped<ICartsService, CartsService>();
+            builder.Services.AddScoped<ICategoriesService, CategoriesService>();
+            builder.Services.AddScoped<ICustomPlushOrderPartsService, CustomPlushOrderPartsService>();
+            builder.Services.AddScoped<ICustomPlushOrdersService, CustomPlushOrdersService>();
+            builder.Services.AddScoped<IFilePermissionsService, FilePermissionsService>();
+            builder.Services.AddScoped<IFilesService, FilesService>();
+            builder.Services.AddScoped<IInventoryService, InventoryService>();
+            builder.Services.AddScoped<IMessagesService, MessagesService>();
+            builder.Services.AddScoped<IOrderItemsService, OrderItemsService>();
+            builder.Services.AddScoped<IOrdersService, OrdersService>();
+            builder.Services.AddScoped<IPaymentMethodsService, PaymentMethodsService>();
+            builder.Services.AddScoped<IPaymentsService, PaymentsService>();
+            builder.Services.AddScoped<IPlushPartCategoriesService, PlushPartCategoriesService>();
+            builder.Services.AddScoped<IPlushPartsService, PlushPartsService>();
+            builder.Services.AddScoped<IProductArtistsService, ProductArtistsService>();
+            builder.Services.AddScoped<IProductAvailabilityService, ProductAvailabilityService>();
+            builder.Services.AddScoped<IProductsService, ProductsService>();
+            builder.Services.AddScoped<IReviewsService, ReviewsService>();
+            builder.Services.AddScoped<IRoleService, RoleService>();
+            builder.Services.AddScoped<IUserRoleService, UserRoleService>();
 
 
             builder.Services.AddControllers();

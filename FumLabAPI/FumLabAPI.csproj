@@ -30,8 +30,4 @@
     <EditorConfigFiles Remove="E:\crapik\sharag2\DATABASES\sol badguy\FumLabAPI\.editorconfig" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="E:\crapik\sharag2\DATABASES\sol badguy\FumLabAPI\.editorconfig" />
-  </ItemGroup>
-
 </Project>
