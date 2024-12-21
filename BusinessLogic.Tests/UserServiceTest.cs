@@ -134,10 +134,10 @@ namespace BuisnessLogic.Tests
 
             var ex = await Assert.ThrowsAnyAsync<Exception>(() => service.Update(example));
 
-        
+
             Assert.True(ex is ArgumentException || ex is ArgumentNullException);
 
-  
+
             repMoq.Verify(x => x.Update(It.IsAny<User>()), Times.Never);
         }
 
