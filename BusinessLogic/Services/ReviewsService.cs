@@ -80,7 +80,7 @@ namespace BusinessLogic.Services
             }
 
             var reviewToDelete = review.First();
-            reviewToDelete.IsDeleted = true; 
+            reviewToDelete.IsDeleted = true;
             _repositoryWrapper.Review.Update(reviewToDelete);
             _repositoryWrapper.Save();
         }

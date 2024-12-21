@@ -1,6 +1,6 @@
 ﻿using BusinessLogic.Services;
-using Domain.Models;
 using Domain.Interfaces;
+using Domain.Models;
 using FumLabAPI.Contracts.ProductAvailability;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;

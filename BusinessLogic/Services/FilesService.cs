@@ -42,7 +42,7 @@ namespace BusinessLogic.Services
             }
 
             model.IsDeleted = false;
-            model.CreatedAt = DateTime.Now; 
+            model.CreatedAt = DateTime.Now;
 
             await _repositoryWrapper.File.Create(model);
             _repositoryWrapper.Save();
@@ -78,7 +78,7 @@ namespace BusinessLogic.Services
             }
 
             var fileToDelete = file.First();
-            fileToDelete.IsDeleted = true; 
+            fileToDelete.IsDeleted = true;
 
             _repositoryWrapper.File.Update(fileToDelete);
             _repositoryWrapper.Save();

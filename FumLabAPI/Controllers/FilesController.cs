@@ -1,10 +1,10 @@
 ﻿using BusinessLogic.Services;
-using Domain.Models;
 using Domain.Interfaces;
+using Domain.Models;
 using FumLabAPI.Contracts.File;
+using FumLabAPI.Contracts.Roles;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
-using FumLabAPI.Contracts.Roles;
 
 namespace FumLabAPI.Controllers
 {

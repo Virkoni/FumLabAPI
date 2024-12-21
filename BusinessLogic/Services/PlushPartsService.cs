@@ -46,7 +46,7 @@ namespace BusinessLogic.Services
             }
 
             model.CreatedAt = DateTime.Now;
-            model.IsDeleted = false; 
+            model.IsDeleted = false;
 
             await _repositoryWrapper.PlushPart.Create(model);
             _repositoryWrapper.Save();

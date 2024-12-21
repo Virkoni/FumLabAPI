@@ -1,11 +1,11 @@
+using BusinessLogic.Services;
+using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using BusinessLogic.Services;
-using DataAccess.Wrapper;
-using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 
 
@@ -49,7 +49,7 @@ namespace FumLabAPI
 
 
             builder.Services.AddControllers();
-     
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(options =>
             {
@@ -57,15 +57,15 @@ namespace FumLabAPI
                 {
                     Version = "v1",
                     Title = "FumLab API",
-                    Description = "описание.тхт",
+                    Description = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅпїЅ",
                     Contact = new OpenApiContact
                     {
-                        Name = "Пример контакта",
+                        Name = "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         Url = new Uri("https://example.com/contact")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "Пример лицензии",
+                        Name = "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         Url = new Uri("https://tenor.com/bOu5d.gif")
                     }
                 });
@@ -75,7 +75,7 @@ namespace FumLabAPI
 
             var app = builder.Build();
 
-       
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

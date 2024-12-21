@@ -1,6 +1,6 @@
 ﻿using BusinessLogic.Services;
-using Domain.Models;
 using Domain.Interfaces;
+using Domain.Models;
 using FumLabAPI.Contracts.Payment;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;

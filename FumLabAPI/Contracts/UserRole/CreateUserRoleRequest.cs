@@ -1,5 +1,5 @@
 ﻿namespace FumLabAPI.Contracts.UserRole
-{ 
+{
     public class CreateUserRoleRequest
     {
         public int UserId { get; set; }

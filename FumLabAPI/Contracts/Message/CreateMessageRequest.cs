@@ -1,5 +1,5 @@
 ﻿namespace FumLabAPI.Contracts.Message
-{ 
+{
     public class CreateMessageRequest
     {
         public int SenderId { get; set; }

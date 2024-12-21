@@ -1,6 +1,6 @@
-﻿using Domain.Interfaces;
+﻿using DataAccess.Repositories;
+using Domain.Interfaces;
 using Domain.Models;
-using DataAccess.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,7 +44,7 @@ namespace DataAccess.Wrapper
 
         public IUserRepository User
         {
-            get 
+            get
             {
                 if (_user == null) { _user = new UserRepository(_repoContext); }
                 return _user;
@@ -55,7 +55,7 @@ namespace DataAccess.Wrapper
         {
             get
             {
-                if (_role == null){ _role = new RoleRepository(_repoContext); }
+                if (_role == null) { _role = new RoleRepository(_repoContext); }
 
                 return _role;
             }
@@ -258,7 +258,7 @@ namespace DataAccess.Wrapper
         }
 
         public async Task Save()
-        { 
+        {
             await _repoContext.SaveChangesAsync();
         }
     }

@@ -1,5 +1,5 @@
 ﻿namespace FumLabAPI.Contracts.Inventory
-{ 
+{
     public class CreateInventoryRequest
     {
         public int ProductId { get; set; }

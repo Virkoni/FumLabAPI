@@ -45,7 +45,7 @@ namespace BusinessLogic.Services
             }
 
             model.CreatedAt = DateTime.Now;
-            model.IsDeleted = false; 
+            model.IsDeleted = false;
 
             await _repositoryWrapper.PlushPartCategory.Create(model);
             _repositoryWrapper.Save();
@@ -72,7 +72,7 @@ namespace BusinessLogic.Services
                 throw new ArgumentException("PartCategoryName is required");
             }
 
-            model.UpdatedAt = DateTime.Now; 
+            model.UpdatedAt = DateTime.Now;
 
             _repositoryWrapper.PlushPartCategory.Update(model);
             _repositoryWrapper.Save();
@@ -89,7 +89,7 @@ namespace BusinessLogic.Services
             }
 
             var categoryToDelete = plushPartCategory.First();
-            categoryToDelete.IsDeleted = true; 
+            categoryToDelete.IsDeleted = true;
             categoryToDelete.UpdatedAt = DateTime.Now;
 
             _repositoryWrapper.PlushPartCategory.Update(categoryToDelete);

@@ -42,7 +42,7 @@ namespace BusinessLogic.Services
             }
 
             model.IsDeleted = false;
-            model.OrderDate = DateTime.Now; 
+            model.OrderDate = DateTime.Now;
 
             await _repositoryWrapper.CustomPlushOrder.Create(model);
             _repositoryWrapper.Save();
@@ -78,7 +78,7 @@ namespace BusinessLogic.Services
             }
 
             var orderToDelete = customPlushOrder.First();
-            orderToDelete.IsDeleted = true; 
+            orderToDelete.IsDeleted = true;
 
             _repositoryWrapper.CustomPlushOrder.Update(orderToDelete);
             _repositoryWrapper.Save();
