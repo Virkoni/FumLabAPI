@@ -18,8 +18,7 @@ namespace FumLabAPI
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<FumLabContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-                b => b.MigrationsAssembly("DataAccess")));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 
             // holy shit 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
@@ -57,15 +56,15 @@ namespace FumLabAPI
                 {
                     Version = "v1",
                     Title = "FumLab API",
-                    Description = "��������.���",
+                    Description = "real",
                     Contact = new OpenApiContact
                     {
-                        Name = "������ ��������",
+                        Name = "true",
                         Url = new Uri("https://example.com/contact")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "������ ��������",
+                        Name = "yep",
                         Url = new Uri("https://tenor.com/bOu5d.gif")
                     }
                 });
@@ -73,14 +72,23 @@ namespace FumLabAPI
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
             });
 
+
             var app = builder.Build();
+           
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<FumLabContext>();
+                context.Database.Migrate();
+            }
+
 
 
             if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+                {
+                    app.UseSwagger();
+                    app.UseSwaggerUI();
+                }
 
             app.UseHttpsRedirection();
 
