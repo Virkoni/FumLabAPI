@@ -116,10 +116,14 @@ namespace BuisnessLogic.Tests
                 IsDeleted = false,
             };
 
+            repMoq.Setup(x => x.FindByCondition(It.IsAny<Expression<Func<User, bool>>>()))
+                  .ReturnsAsync(new List<User> { example });
+
             await service.Update(example);
 
             repMoq.Verify(x => x.Update(It.IsAny<User>()), Times.Once);
         }
+
 
 
         [Theory]
@@ -130,10 +134,10 @@ namespace BuisnessLogic.Tests
 
             var ex = await Assert.ThrowsAnyAsync<Exception>(() => service.Update(example));
 
-            // Adjust the test to check for either ArgumentException or ArgumentNullException
+        
             Assert.True(ex is ArgumentException || ex is ArgumentNullException);
 
-            // Ensure Update was not called
+  
             repMoq.Verify(x => x.Update(It.IsAny<User>()), Times.Never);
         }
 

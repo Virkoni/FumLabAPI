@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "S:\\API\\FumLabAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{76D89325-894B-46F1-8EA8-A7A90868B29F}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|s:\\api\\fumlabapi\\businesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76D89325-894B-46F1-8EA8-A7A90868B29F}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|BusinessLogic\\BusinessLogic.csproj|s:\\api\\fumlabapi\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|s:\\api\\fumlabapi\\domain\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|solutionrelative:domain\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|s:\\api\\fumlabapi\\domain\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|solutionrelative:domain\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|s:\\api\\fumlabapi\\domain\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|solutionrelative:domain\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|s:\\api\\fumlabapi\\domain\\models\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|solutionrelative:domain\\models\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +58,94 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T11:12:49.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserServiceTest.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\BusinessLogic.Tests\\UserServiceTest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic.Tests\\UserServiceTest.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\BusinessLogic.Tests\\UserServiceTest.cs",
+              "RelativeToolTip": "BusinessLogic.Tests\\UserServiceTest.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:58:23.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "FumLabAPI\\Controllers\\PaymentsController.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "FumLabAPI\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:51:40.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Models\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\PaymentMethod.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\Domain\\Models\\PaymentMethod.cs",
+              "RelativeToolTip": "Domain\\Models\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:51:35.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Payment.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\Domain\\Models\\Payment.cs",
+              "RelativeToolTip": "Domain\\Models\\Payment.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:51:33.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Message.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Message.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\Domain\\Models\\Message.cs",
+              "RelativeToolTip": "Domain\\Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:51:32.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "File.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Models\\File.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\File.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\Domain\\Models\\File.cs",
+              "RelativeToolTip": "Domain\\Models\\File.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:51:31.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FumLabAPI.http",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\FumLabAPI.http",
               "RelativeDocumentMoniker": "FumLabAPI\\FumLabAPI.http",
@@ -38,25 +153,23 @@
               "RelativeToolTip": "FumLabAPI\\FumLabAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-12-05T16:36:47.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T16:36:47.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Program.cs",
               "RelativeDocumentMoniker": "FumLabAPI\\Program.cs",
               "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Program.cs",
               "RelativeToolTip": "FumLabAPI\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:36:35.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T16:36:35.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\appsettings.json",
               "RelativeDocumentMoniker": "FumLabAPI\\appsettings.json",
@@ -64,8 +177,7 @@
               "RelativeToolTip": "FumLabAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-05T16:36:14.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T16:36:14.096Z"
             }
           ]
         },
