@@ -9,7 +9,7 @@ services:
     environment:
       - ASPNETCORE_URLS=http://+:5000
       - ASPNETCORE_ENVIROMENT=Development
-      - ConnectionString=Server=db;Database=FumLab4;User Id=SA;Password=Password_123;MultipleActiveResultSets=true;
+      - ConnectionString=Server=sql.bsite.net\MSSQL2016;Database=fumlab_db;User Id=fumlab_db;Password=Password12345!;TrustServerCertificate=true;
     ports:
       - "5000:5000"
     depends_on:

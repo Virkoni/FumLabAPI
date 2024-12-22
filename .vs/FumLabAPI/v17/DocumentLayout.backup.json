@@ -42,8 +42,7 @@
               "RelativeToolTip": "DataAccess\\Migrations\\20241222172626_MigratonName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T17:26:26.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:26:26.452Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "FumLabAPI\\Models\\FumLabContext.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T17:22:09.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:22:09.798Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "FumLabAPI\\Program.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAQwFAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T16:58:35.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T16:58:35.972Z"
             },
             {
               "$type": "Document",
@@ -79,7 +76,7 @@
               "RelativeDocumentMoniker": "FumLabAPI\\appsettings.json",
               "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\appsettings.json",
               "RelativeToolTip": "FumLabAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-22T15:24:51.849Z",
               "EditorCaption": ""
