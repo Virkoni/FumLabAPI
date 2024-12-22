@@ -5,11 +5,11 @@ services:
     image: ${DOCKER_REGISTRY-}webapi
     build:
       context: .
-      dockerfile: ./dockerfile
+      dockerfile: ./Dockerfile
     environment:
       - ASPNETCORE_URLS=http://+:5000
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionString=Server=sql.bsite.net\MSSQL2016;Database=fumlab_db;User Id=fumlab_db;Password=Password12345!;TrustServerCertificate=true;
+      - ASPNETCORE_ENVIROMENT=Development
+      - ConnectionString=Server=db;Database=FumLab;User Id=SA;Password=Password_123;MultipleActiveResultSets=true;
     ports:
       - "5000:5000"
     depends_on:
@@ -17,12 +17,8 @@ services:
   db:
     image: "mcr.microsoft.com/mssql/server"
     environment:
-      - "SA_PASSWORD=Password12345!"
+      - "SA_PASSWORD=Password_123"
       - "ACCEPT_EULA=Y"
     container_name: mssql
     ports:
-      - "1433:1433"
-
-
-
-      
+      - "1555:1433"

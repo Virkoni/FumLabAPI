@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FumLabAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35f5fd604f7c8a71540e08949db03863e257200d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd2e5d9ff3b6229c1fbfd606752ddf2a1a7c7929")]
 [assembly: System.Reflection.AssemblyProductAttribute("FumLabAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FumLabAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,10 +3,8 @@ using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
-
 
 
 namespace FumLabAPI
@@ -17,8 +15,9 @@ namespace FumLabAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddDbContext<FumLabContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
+            builder.Services.AddDbContext<FumLabContext>(
+                           options => options.UseSqlServer(builder.Configuration["ConnectionString"]));
+
 
             // holy shit 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
@@ -84,7 +83,7 @@ namespace FumLabAPI
 
 
 
-            if (app.Environment.IsDevelopment())
+            // if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();

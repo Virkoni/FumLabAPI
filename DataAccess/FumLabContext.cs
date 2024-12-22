@@ -59,8 +59,6 @@ public partial class FumLabContext : DbContext
 
     public virtual DbSet<UserRole> UserRoles { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=.;Database=FumLab;TrustServerCertificate=True;Trusted_Connection=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
