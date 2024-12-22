@@ -5,11 +5,11 @@ services:
     image: ${DOCKER_REGISTRY-}webapi
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./dockerfile
     environment:
       - ASPNETCORE_URLS=http://+:5000
       - ASPNETCORE_ENVIROMENT=Development
-      - ConnectionString=Server=db;Database=FumLab;User Id=SA;Password=Password_123;MultipleActiveResultSets=true;
+      - ConnectionString=Server=db;Database=FumLab4;User Id=SA;Password=Password_123;MultipleActiveResultSets=true;
     ports:
       - "5000:5000"
     depends_on:

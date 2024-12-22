@@ -6,7 +6,7 @@ using System;
 namespace DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class FumLabMigration : Migration
+    public partial class MigratonName : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -183,6 +183,33 @@ namespace DataAccess.Migrations
                     table.ForeignKey(
                         name: "FK__Files__UploadedB__1BC821DD",
                         column: x => x.UploadedBy,
+                        principalTable: "Users",
+                        principalColumn: "UserId");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Messages",
+                columns: table => new
+                {
+                    MessageId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SenderId = table.Column<int>(type: "int", nullable: false),
+                    ReceiverId = table.Column<int>(type: "int", nullable: false),
+                    MessageText = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SentAt = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: true, defaultValue: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK__Messages__C87C0C9C566EA764", x => x.MessageId);
+                    table.ForeignKey(
+                        name: "FK__Messages__Receiv__2BC97F7C",
+                        column: x => x.ReceiverId,
+                        principalTable: "Users",
+                        principalColumn: "UserId");
+                    table.ForeignKey(
+                        name: "FK__Messages__Sender__2AD55B43",
+                        column: x => x.SenderId,
                         principalTable: "Users",
                         principalColumn: "UserId");
                 });
@@ -595,6 +622,16 @@ namespace DataAccess.Migrations
                 column: "ProductId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Messages_ReceiverId",
+                table: "Messages",
+                column: "ReceiverId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Messages_SenderId",
+                table: "Messages",
+                column: "SenderId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_OrderItems_OrderId",
                 table: "OrderItems",
                 column: "OrderId");
@@ -717,6 +754,9 @@ namespace DataAccess.Migrations
 
             migrationBuilder.DropTable(
                 name: "Inventory");
+
+            migrationBuilder.DropTable(
+                name: "Messages");
 
             migrationBuilder.DropTable(
                 name: "OrderItems");

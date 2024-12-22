@@ -33,6 +33,8 @@ public partial class FumLabContext : DbContext
 
     public virtual DbSet<Inventory> Inventories { get; set; }
 
+    public virtual DbSet<Message> Messages { get; set; }
+
     public virtual DbSet<Order> Orders { get; set; }
 
     public virtual DbSet<OrderItem> OrderItems { get; set; }
@@ -66,6 +68,10 @@ public partial class FumLabContext : DbContext
         {
             entity.HasKey(e => e.ArtistId).HasName("PK__Artists__25706B5000D3EF11");
 
+            entity.HasIndex(e => e.CreatedBy, "IX_Artists_CreatedBy");
+
+            entity.HasIndex(e => e.UpdatedBy, "IX_Artists_UpdatedBy");
+
             entity.Property(e => e.ArtistName).HasMaxLength(100);
             entity.Property(e => e.ContactInfo).HasMaxLength(255);
             entity.Property(e => e.CreatedAt)
@@ -87,6 +93,8 @@ public partial class FumLabContext : DbContext
         {
             entity.HasKey(e => e.CartId).HasName("PK__Carts__51BCD7B7D4AAF9F6");
 
+            entity.HasIndex(e => e.UserId, "IX_Carts_UserId");
+
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
@@ -102,6 +110,10 @@ public partial class FumLabContext : DbContext
         modelBuilder.Entity<CartItem>(entity =>
         {
             entity.HasKey(e => e.CartItemId).HasName("PK__CartItem__488B0B0AAF8D4953");
+
+            entity.HasIndex(e => e.CartId, "IX_CartItems_CartId");
+
+            entity.HasIndex(e => e.ProductId, "IX_CartItems_ProductId");
 
             entity.Property(e => e.AddedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -135,6 +147,8 @@ public partial class FumLabContext : DbContext
         {
             entity.HasKey(e => e.CustomOrderId).HasName("PK__CustomPl__BA69D88EE14BEC94");
 
+            entity.HasIndex(e => e.UserId, "IX_CustomPlushOrders_UserId");
+
             entity.Property(e => e.IsDeleted).HasDefaultValue(false);
             entity.Property(e => e.OrderDate)
                 .HasDefaultValueSql("(getdate())")
@@ -150,6 +164,10 @@ public partial class FumLabContext : DbContext
         modelBuilder.Entity<CustomPlushOrderPart>(entity =>
         {
             entity.HasKey(e => e.CustomOrderPartId).HasName("PK__CustomPl__7F520D4DD706A169");
+
+            entity.HasIndex(e => e.CustomOrderId, "IX_CustomPlushOrderParts_CustomOrderId");
+
+            entity.HasIndex(e => e.PartId, "IX_CustomPlushOrderParts_PartId");
 
             entity.Property(e => e.AddedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -170,6 +188,8 @@ public partial class FumLabContext : DbContext
         {
             entity.HasKey(e => e.FileId).HasName("PK__Files__6F0F98BFED1E723E");
 
+            entity.HasIndex(e => e.UploadedBy, "IX_Files_UploadedBy");
+
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
@@ -187,6 +207,10 @@ public partial class FumLabContext : DbContext
         modelBuilder.Entity<FilePermission>(entity =>
         {
             entity.HasKey(e => e.PermissionId).HasName("PK__FilePerm__EFA6FB2F41069C19");
+
+            entity.HasIndex(e => e.FileId, "IX_FilePermissions_FileId");
+
+            entity.HasIndex(e => e.RoleId, "IX_FilePermissions_RoleId");
 
             entity.Property(e => e.CanDelete).HasDefaultValue(false);
             entity.Property(e => e.CanEdit).HasDefaultValue(false);
@@ -209,6 +233,8 @@ public partial class FumLabContext : DbContext
 
             entity.ToTable("Inventory");
 
+            entity.HasIndex(e => e.ProductId, "IX_Inventory_ProductId");
+
             entity.Property(e => e.IsDeleted).HasDefaultValue(false);
             entity.Property(e => e.LastUpdated)
                 .HasDefaultValueSql("(getdate())")
@@ -220,9 +246,31 @@ public partial class FumLabContext : DbContext
                 .HasConstraintName("FK__Inventory__Produ__10566F31");
         });
 
+        modelBuilder.Entity<Message>(entity =>
+        {
+            entity.HasKey(e => e.MessageId).HasName("PK__Messages__C87C0C9C566EA764");
+
+            entity.Property(e => e.IsDeleted).HasDefaultValue(false);
+            entity.Property(e => e.SentAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+
+            entity.HasOne(d => d.Receiver).WithMany(p => p.MessageReceivers)
+                .HasForeignKey(d => d.ReceiverId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Messages__Receiv__2BC97F7C");
+
+            entity.HasOne(d => d.Sender).WithMany(p => p.MessageSenders)
+                .HasForeignKey(d => d.SenderId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Messages__Sender__2AD55B43");
+        });
+
         modelBuilder.Entity<Order>(entity =>
         {
             entity.HasKey(e => e.OrderId).HasName("PK__Orders__C3905BCF94060AD6");
+
+            entity.HasIndex(e => e.UserId, "IX_Orders_UserId");
 
             entity.Property(e => e.IsDeleted).HasDefaultValue(false);
             entity.Property(e => e.OrderDate)
@@ -240,6 +288,10 @@ public partial class FumLabContext : DbContext
         {
             entity.HasKey(e => e.OrderItemId).HasName("PK__OrderIte__57ED0681F0ECD349");
 
+            entity.HasIndex(e => e.OrderId, "IX_OrderItems_OrderId");
+
+            entity.HasIndex(e => e.ProductId, "IX_OrderItems_ProductId");
+
             entity.Property(e => e.Price).HasColumnType("decimal(10, 2)");
 
             entity.HasOne(d => d.Order).WithMany(p => p.OrderItems)
@@ -256,6 +308,10 @@ public partial class FumLabContext : DbContext
         modelBuilder.Entity<Payment>(entity =>
         {
             entity.HasKey(e => e.PaymentId).HasName("PK__Payments__9B556A386BBD2178");
+
+            entity.HasIndex(e => e.OrderId, "IX_Payments_OrderId");
+
+            entity.HasIndex(e => e.PaymentMethodId, "IX_Payments_PaymentMethodId");
 
             entity.Property(e => e.Amount).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.IsDeleted).HasDefaultValue(false);
@@ -289,6 +345,12 @@ public partial class FumLabContext : DbContext
         modelBuilder.Entity<PlushPart>(entity =>
         {
             entity.HasKey(e => e.PartId).HasName("PK__PlushPar__7C3F0D507E3ADB09");
+
+            entity.HasIndex(e => e.CreatedBy, "IX_PlushParts_CreatedBy");
+
+            entity.HasIndex(e => e.PartCategoryId, "IX_PlushParts_PartCategoryId");
+
+            entity.HasIndex(e => e.UpdatedBy, "IX_PlushParts_UpdatedBy");
 
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -330,6 +392,12 @@ public partial class FumLabContext : DbContext
         {
             entity.HasKey(e => e.ProductId).HasName("PK__Products__B40CC6CDC1445834");
 
+            entity.HasIndex(e => e.CategoryId, "IX_Products_CategoryId");
+
+            entity.HasIndex(e => e.CreatedBy, "IX_Products_CreatedBy");
+
+            entity.HasIndex(e => e.UpdatedBy, "IX_Products_UpdatedBy");
+
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
@@ -357,6 +425,10 @@ public partial class FumLabContext : DbContext
         {
             entity.HasKey(e => e.ProductArtistId).HasName("PK__ProductA__82CFD52219FC074B");
 
+            entity.HasIndex(e => e.ArtistId, "IX_ProductArtists_ArtistId");
+
+            entity.HasIndex(e => e.ProductId, "IX_ProductArtists_ProductId");
+
             entity.Property(e => e.AssignedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
@@ -379,6 +451,8 @@ public partial class FumLabContext : DbContext
 
             entity.ToTable("ProductAvailability");
 
+            entity.HasIndex(e => e.ProductId, "IX_ProductAvailability_ProductId");
+
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
@@ -395,6 +469,10 @@ public partial class FumLabContext : DbContext
         modelBuilder.Entity<Review>(entity =>
         {
             entity.HasKey(e => e.ReviewId).HasName("PK__Reviews__74BC79CE40EB47B1");
+
+            entity.HasIndex(e => e.ProductId, "IX_Reviews_ProductId");
+
+            entity.HasIndex(e => e.UserId, "IX_Reviews_UserId");
 
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -446,6 +524,10 @@ public partial class FumLabContext : DbContext
         modelBuilder.Entity<UserRole>(entity =>
         {
             entity.HasKey(e => e.UserRoleId).HasName("PK__UserRole__3D978A35993E5CCF");
+
+            entity.HasIndex(e => e.RoleId, "IX_UserRoles_RoleId");
+
+            entity.HasIndex(e => e.UserId, "IX_UserRoles_UserId");
 
             entity.Property(e => e.AssignedAt)
                 .HasDefaultValueSql("(getdate())")

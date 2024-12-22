@@ -61,9 +61,9 @@ namespace DataAccess.Migrations
                     b.HasKey("ArtistId")
                         .HasName("PK__Artists__25706B5000D3EF11");
 
-                    b.HasIndex("CreatedBy");
+                    b.HasIndex(new[] { "CreatedBy" }, "IX_Artists_CreatedBy");
 
-                    b.HasIndex("UpdatedBy");
+                    b.HasIndex(new[] { "UpdatedBy" }, "IX_Artists_UpdatedBy");
 
                     b.ToTable("Artists");
                 });
@@ -95,7 +95,7 @@ namespace DataAccess.Migrations
                     b.HasKey("CartId")
                         .HasName("PK__Carts__51BCD7B7D4AAF9F6");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex(new[] { "UserId" }, "IX_Carts_UserId");
 
                     b.ToTable("Carts");
                 });
@@ -125,9 +125,9 @@ namespace DataAccess.Migrations
                     b.HasKey("CartItemId")
                         .HasName("PK__CartItem__488B0B0AAF8D4953");
 
-                    b.HasIndex("CartId");
+                    b.HasIndex(new[] { "CartId" }, "IX_CartItems_CartId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex(new[] { "ProductId" }, "IX_CartItems_ProductId");
 
                     b.ToTable("CartItems");
                 });
@@ -195,7 +195,7 @@ namespace DataAccess.Migrations
                     b.HasKey("CustomOrderId")
                         .HasName("PK__CustomPl__BA69D88EE14BEC94");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex(new[] { "UserId" }, "IX_CustomPlushOrders_UserId");
 
                     b.ToTable("CustomPlushOrders");
                 });
@@ -225,9 +225,9 @@ namespace DataAccess.Migrations
                     b.HasKey("CustomOrderPartId")
                         .HasName("PK__CustomPl__7F520D4DD706A169");
 
-                    b.HasIndex("CustomOrderId");
+                    b.HasIndex(new[] { "CustomOrderId" }, "IX_CustomPlushOrderParts_CustomOrderId");
 
-                    b.HasIndex("PartId");
+                    b.HasIndex(new[] { "PartId" }, "IX_CustomPlushOrderParts_PartId");
 
                     b.ToTable("CustomPlushOrderParts");
                 });
@@ -270,7 +270,7 @@ namespace DataAccess.Migrations
                     b.HasKey("FileId")
                         .HasName("PK__Files__6F0F98BFED1E723E");
 
-                    b.HasIndex("UploadedBy");
+                    b.HasIndex(new[] { "UploadedBy" }, "IX_Files_UploadedBy");
 
                     b.ToTable("Files");
                 });
@@ -307,9 +307,9 @@ namespace DataAccess.Migrations
                     b.HasKey("PermissionId")
                         .HasName("PK__FilePerm__EFA6FB2F41069C19");
 
-                    b.HasIndex("FileId");
+                    b.HasIndex(new[] { "FileId" }, "IX_FilePermissions_FileId");
 
-                    b.HasIndex("RoleId");
+                    b.HasIndex(new[] { "RoleId" }, "IX_FilePermissions_RoleId");
 
                     b.ToTable("FilePermissions");
                 });
@@ -341,9 +341,47 @@ namespace DataAccess.Migrations
                     b.HasKey("InventoryId")
                         .HasName("PK__Inventor__F5FDE6B3718E5B50");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex(new[] { "ProductId" }, "IX_Inventory_ProductId");
 
                     b.ToTable("Inventory", (string)null);
+                });
+
+            modelBuilder.Entity("Domain.Models.Message", b =>
+                {
+                    b.Property<int>("MessageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MessageId"));
+
+                    b.Property<bool?>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("MessageText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ReceiverId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SenderId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("SentAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime")
+                        .HasDefaultValueSql("(getdate())");
+
+                    b.HasKey("MessageId")
+                        .HasName("PK__Messages__C87C0C9C566EA764");
+
+                    b.HasIndex("ReceiverId");
+
+                    b.HasIndex("SenderId");
+
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("Domain.Models.Order", b =>
@@ -373,7 +411,7 @@ namespace DataAccess.Migrations
                     b.HasKey("OrderId")
                         .HasName("PK__Orders__C3905BCF94060AD6");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex(new[] { "UserId" }, "IX_Orders_UserId");
 
                     b.ToTable("Orders");
                 });
@@ -401,9 +439,9 @@ namespace DataAccess.Migrations
                     b.HasKey("OrderItemId")
                         .HasName("PK__OrderIte__57ED0681F0ECD349");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex(new[] { "OrderId" }, "IX_OrderItems_OrderId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex(new[] { "ProductId" }, "IX_OrderItems_ProductId");
 
                     b.ToTable("OrderItems");
                 });
@@ -438,9 +476,9 @@ namespace DataAccess.Migrations
                     b.HasKey("PaymentId")
                         .HasName("PK__Payments__9B556A386BBD2178");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex(new[] { "OrderId" }, "IX_Payments_OrderId");
 
-                    b.HasIndex("PaymentMethodId");
+                    b.HasIndex(new[] { "PaymentMethodId" }, "IX_Payments_PaymentMethodId");
 
                     b.ToTable("Payments");
                 });
@@ -523,11 +561,11 @@ namespace DataAccess.Migrations
                     b.HasKey("PartId")
                         .HasName("PK__PlushPar__7C3F0D507E3ADB09");
 
-                    b.HasIndex("CreatedBy");
+                    b.HasIndex(new[] { "CreatedBy" }, "IX_PlushParts_CreatedBy");
 
-                    b.HasIndex("PartCategoryId");
+                    b.HasIndex(new[] { "PartCategoryId" }, "IX_PlushParts_PartCategoryId");
 
-                    b.HasIndex("UpdatedBy");
+                    b.HasIndex(new[] { "UpdatedBy" }, "IX_PlushParts_UpdatedBy");
 
                     b.ToTable("PlushParts");
                 });
@@ -613,11 +651,11 @@ namespace DataAccess.Migrations
                     b.HasKey("ProductId")
                         .HasName("PK__Products__B40CC6CDC1445834");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex(new[] { "CategoryId" }, "IX_Products_CategoryId");
 
-                    b.HasIndex("CreatedBy");
+                    b.HasIndex(new[] { "CreatedBy" }, "IX_Products_CreatedBy");
 
-                    b.HasIndex("UpdatedBy");
+                    b.HasIndex(new[] { "UpdatedBy" }, "IX_Products_UpdatedBy");
 
                     b.ToTable("Products");
                 });
@@ -649,9 +687,9 @@ namespace DataAccess.Migrations
                     b.HasKey("ProductArtistId")
                         .HasName("PK__ProductA__82CFD52219FC074B");
 
-                    b.HasIndex("ArtistId");
+                    b.HasIndex(new[] { "ArtistId" }, "IX_ProductArtists_ArtistId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex(new[] { "ProductId" }, "IX_ProductArtists_ProductId");
 
                     b.ToTable("ProductArtists");
                 });
@@ -686,7 +724,7 @@ namespace DataAccess.Migrations
                     b.HasKey("AvailabilityId")
                         .HasName("PK__ProductA__DA3979B17E6DB3EB");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex(new[] { "ProductId" }, "IX_ProductAvailability_ProductId");
 
                     b.ToTable("ProductAvailability", (string)null);
                 });
@@ -725,9 +763,9 @@ namespace DataAccess.Migrations
                     b.HasKey("ReviewId")
                         .HasName("PK__Reviews__74BC79CE40EB47B1");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex(new[] { "ProductId" }, "IX_Reviews_ProductId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex(new[] { "UserId" }, "IX_Reviews_UserId");
 
                     b.ToTable("Reviews");
                 });
@@ -829,9 +867,9 @@ namespace DataAccess.Migrations
                     b.HasKey("UserRoleId")
                         .HasName("PK__UserRole__3D978A35993E5CCF");
 
-                    b.HasIndex("RoleId");
+                    b.HasIndex(new[] { "RoleId" }, "IX_UserRoles_RoleId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex(new[] { "UserId" }, "IX_UserRoles_UserId");
 
                     b.ToTable("UserRoles");
                 });
@@ -952,6 +990,25 @@ namespace DataAccess.Migrations
                         .HasConstraintName("FK__Inventory__Produ__10566F31");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("Domain.Models.Message", b =>
+                {
+                    b.HasOne("Domain.Models.User", "Receiver")
+                        .WithMany("MessageReceivers")
+                        .HasForeignKey("ReceiverId")
+                        .IsRequired()
+                        .HasConstraintName("FK__Messages__Receiv__2BC97F7C");
+
+                    b.HasOne("Domain.Models.User", "Sender")
+                        .WithMany("MessageSenders")
+                        .HasForeignKey("SenderId")
+                        .IsRequired()
+                        .HasConstraintName("FK__Messages__Sender__2AD55B43");
+
+                    b.Navigation("Receiver");
+
+                    b.Navigation("Sender");
                 });
 
             modelBuilder.Entity("Domain.Models.Order", b =>
@@ -1201,6 +1258,10 @@ namespace DataAccess.Migrations
                     b.Navigation("CustomPlushOrders");
 
                     b.Navigation("Files");
+
+                    b.Navigation("MessageReceivers");
+
+                    b.Navigation("MessageSenders");
 
                     b.Navigation("Orders");
 

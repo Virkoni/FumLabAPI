@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 
 EXPOSE 80
 ENV ASPNETCORE_URLS=http://+:80
-ENV ASPNETCORE_ENVIROMENT=Development
+ENV ASPNETCORE_ENVIRONMENT=Development
 ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 

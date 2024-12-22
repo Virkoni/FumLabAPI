@@ -29,6 +29,10 @@ public partial class User
 
     public virtual ICollection<File> Files { get; set; } = new List<File>();
 
+    public virtual ICollection<Message> MessageReceivers { get; set; } = new List<Message>();
+
+    public virtual ICollection<Message> MessageSenders { get; set; } = new List<Message>();
+
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
     public virtual ICollection<PlushPart> PlushPartCreatedByNavigations { get; set; } = new List<PlushPart>();
