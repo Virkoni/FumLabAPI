@@ -8,7 +8,5 @@ DataAccess/bin/
 DataAccess/obj/
 Domain/bin/
 Domain/obj/
-MnogoLibAPI/bin/
-MnogoLibAPI/obj/
-MnogoLibClient/bin/
-MnogoLibClient/obj/
+FumLabAPI/bin/
+FumLabAPI/obj/
