@@ -59,7 +59,7 @@ namespace FumLabAPI
                     Contact = new OpenApiContact
                     {
                         Name = "true",
-                        Url = new Uri("https://example.com/contact")
+                        Url = new Uri("https://localhost:7049/")
                     },
                     License = new OpenApiLicense
                     {
