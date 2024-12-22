@@ -74,7 +74,7 @@ namespace FumLabAPI
 
 
             var app = builder.Build();
-           
+
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -85,10 +85,10 @@ namespace FumLabAPI
 
 
             if (app.Environment.IsDevelopment())
-                {
-                    app.UseSwagger();
-                    app.UseSwaggerUI();
-                }
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
 
             app.UseHttpsRedirection();
 
