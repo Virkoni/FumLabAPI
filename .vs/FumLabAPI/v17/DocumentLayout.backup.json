@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "S:\\API\\FumLabAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|s:\\api\\fumlabapi\\blazorclient\\pages\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|solutionrelative:blazorclient\\pages\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|BusinessLogic\\BusinessLogic.csproj|s:\\api\\fumlabapi\\businesslogic\\helpers\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DE3D40F-FB4B-4896-B324-8CC4A009052D}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\helpers\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\helpers\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\helpers\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|s:\\api\\fumlabapi\\blazorclient\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|solutionrelative:blazorclient\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|s:\\api\\fumlabapi\\blazorclient\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|solutionrelative:blazorclient\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -47,20 +79,8 @@
       "RelativeMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|solutionrelative:blazorclient\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|s:\\api\\fumlabapi\\blazorclient\\pages\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|solutionrelative:blazorclient\\pages\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|s:\\api\\fumlabapi\\blazorclient\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|solutionrelative:blazorclient\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E02852A4-6609-4229-AE1A-67D208F3471F}|BlazorClient\\BlazorClient.csproj|s:\\api\\fumlabapi\\blazorclient\\wwwroot\\fumo.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
@@ -107,10 +127,6 @@
       "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\contracts\\user\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|s:\\api\\fumlabapi\\fumlabapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A331977-0B6C-4467-A143-18439700D70D}|FumLabAPI\\FumLabAPI.csproj|solutionrelative:fumlabapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|s:\\api\\fumlabapi\\domain\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{471D47BE-18E6-4E11-8158-39C34E933796}|Domain\\Domain.csproj|solutionrelative:domain\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -134,32 +150,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 86,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Home.razor",
-              "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "BlazorClient\\Pages\\Home.razor",
-              "ToolTip": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Home.razor",
-              "RelativeToolTip": "BlazorClient\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T12:26:24.951Z",
+              "DocumentIndex": 1,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "FumLabAPI\\Controllers\\RoleController.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "FumLabAPI\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T15:29:32.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
+              "Title": "UserRoleController.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\UserRoleController.cs",
+              "RelativeDocumentMoniker": "FumLabAPI\\Controllers\\UserRoleController.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\UserRoleController.cs",
+              "RelativeToolTip": "FumLabAPI\\Controllers\\UserRoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T15:29:29.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorHandlerMiddleware.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Helpers\\ErrorHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "FumLabAPI\\Helpers\\ErrorHandlerMiddleware.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Helpers\\ErrorHandlerMiddleware.cs",
+              "RelativeToolTip": "FumLabAPI\\Helpers\\ErrorHandlerMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T15:22:30.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Counter.razor",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "BlazorClient\\Pages\\Counter.razor",
@@ -167,12 +205,11 @@
               "RelativeToolTip": "BlazorClient\\Pages\\Counter.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T12:26:29.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T12:26:29.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "BlazorClient\\Layout\\NavMenu.razor",
@@ -180,12 +217,11 @@
               "RelativeToolTip": "BlazorClient\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T12:30:08.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T12:30:08.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "BlazorClient\\Layout\\MainLayout.razor",
@@ -193,25 +229,24 @@
               "RelativeToolTip": "BlazorClient\\Layout\\MainLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T12:30:07.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T12:30:07.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "app.css",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "BlazorClient\\wwwroot\\css\\app.css",
               "ToolTip": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\css\\app.css",
               "RelativeToolTip": "BlazorClient\\wwwroot\\css\\app.css",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAcwMIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAcwL8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-12-23T12:34:22.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "_Imports.razor",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\_Imports.razor",
               "RelativeDocumentMoniker": "BlazorClient\\_Imports.razor",
@@ -219,12 +254,67 @@
               "RelativeToolTip": "BlazorClient\\_Imports.razor",
               "ViewState": "AgIAAAIAAAAAAAAAAAAawAkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T12:33:37.239Z",
+              "WhenOpened": "2024-12-23T12:33:37.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Program.cs",
+              "RelativeDocumentMoniker": "FumLabAPI\\Program.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Program.cs",
+              "RelativeToolTip": "FumLabAPI\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T12:24:42.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "FumLabAPI\\Controllers\\UserController.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "FumLabAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T12:23:45.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Users.razor",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Users.razor",
+              "RelativeDocumentMoniker": "BlazorClient\\Pages\\Users.razor",
+              "ToolTip": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Users.razor",
+              "RelativeToolTip": "BlazorClient\\Pages\\Users.razor",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T20:25:19.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AppException.cs",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\BusinessLogic\\Helpers\\AppException.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Helpers\\AppException.cs",
+              "ToolTip": "S:\\API\\FumLabAPI\\BusinessLogic\\Helpers\\AppException.cs",
+              "RelativeToolTip": "BusinessLogic\\Helpers\\AppException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T15:22:51.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "App.razor",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\App.razor",
               "RelativeDocumentMoniker": "BlazorClient\\App.razor",
@@ -232,12 +322,11 @@
               "RelativeToolTip": "BlazorClient\\App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T12:33:37.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T12:33:37.434Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "dockerfile",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\dockerfile",
               "RelativeDocumentMoniker": "BlazorClient\\dockerfile",
@@ -245,12 +334,36 @@
               "RelativeToolTip": "BlazorClient\\dockerfile",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-23T12:39:56.511Z",
+              "WhenOpened": "2024-12-23T12:39:56.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BlazorClient\\Properties\\launchSettings.json",
+              "ToolTip": "S:\\API\\FumLabAPI\\BlazorClient\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BlazorClient\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-23T12:58:25.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
+              "Title": "Home.razor",
+              "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorClient\\Pages\\Home.razor",
+              "ToolTip": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorClient\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T12:26:24.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Program.cs",
               "RelativeDocumentMoniker": "BlazorClient\\Program.cs",
@@ -258,12 +371,11 @@
               "RelativeToolTip": "BlazorClient\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T12:33:45.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T12:33:45.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "bootstrap.min.css",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
               "RelativeDocumentMoniker": "BlazorClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -271,25 +383,11 @@
               "RelativeToolTip": "BlazorClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-23T12:34:18.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T12:34:18.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Users.razor",
-              "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Users.razor",
-              "RelativeDocumentMoniker": "BlazorClient\\Pages\\Users.razor",
-              "ToolTip": "S:\\API\\FumLabAPI\\BlazorClient\\Pages\\Users.razor",
-              "RelativeToolTip": "BlazorClient\\Pages\\Users.razor",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T20:25:19.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\appsettings.json",
               "RelativeDocumentMoniker": "FumLabAPI\\appsettings.json",
@@ -301,20 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Program.cs",
-              "RelativeDocumentMoniker": "FumLabAPI\\Program.cs",
-              "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Program.cs",
-              "RelativeToolTip": "FumLabAPI\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T12:24:42.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "index.html",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "BlazorClient\\wwwroot\\index.html",
@@ -322,24 +407,11 @@
               "RelativeToolTip": "BlazorClient\\wwwroot\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-23T12:39:58.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T12:39:58.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "BlazorClient\\Properties\\launchSettings.json",
-              "ToolTip": "S:\\API\\FumLabAPI\\BlazorClient\\Properties\\launchSettings.json",
-              "RelativeToolTip": "BlazorClient\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-23T12:58:25.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "fumo.png",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\fumo.png",
               "RelativeDocumentMoniker": "BlazorClient\\wwwroot\\fumo.png",
@@ -350,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "nginx.conf",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\nginx.conf",
               "RelativeDocumentMoniker": "BlazorClient\\nginx.conf",
@@ -362,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "icon-192.png",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\icon-192.png",
               "RelativeDocumentMoniker": "BlazorClient\\wwwroot\\icon-192.png",
@@ -373,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "BlazorClient.csproj",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BlazorClient\\BlazorClient.csproj",
               "RelativeDocumentMoniker": "BlazorClient\\BlazorClient.csproj",
@@ -385,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "UserService.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BusinessLogic\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
@@ -397,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "IUserService.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserService.cs",
@@ -409,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "IUserRoleService.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Interfaces\\IUserRoleService.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserRoleService.cs",
@@ -421,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "IUserRoleRepository.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Interfaces\\IUserRoleRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserRoleRepository.cs",
@@ -433,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "FumLabAPI.csproj",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\FumLabAPI.csproj",
               "RelativeDocumentMoniker": "FumLabAPI\\FumLabAPI.csproj",
@@ -445,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "launchSettings.json",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "FumLabAPI\\Properties\\launchSettings.json",
@@ -457,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "UserRole.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\UserRole.cs",
@@ -469,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "CreateUserRequest.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Contracts\\User\\CreateUserRequest.cs",
               "RelativeDocumentMoniker": "FumLabAPI\\Contracts\\User\\CreateUserRequest.cs",
@@ -481,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "GetUserResponse.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Contracts\\User\\GetUserResponse.cs",
               "RelativeDocumentMoniker": "FumLabAPI\\Contracts\\User\\GetUserResponse.cs",
@@ -493,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "UserServiceTest.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\BusinessLogic.Tests\\UserServiceTest.cs",
               "RelativeDocumentMoniker": "BusinessLogic.Tests\\UserServiceTest.cs",
@@ -505,19 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "FumLabAPI\\Controllers\\UserController.cs",
-              "ToolTip": "S:\\API\\FumLabAPI\\FumLabAPI\\Controllers\\UserController.cs",
-              "RelativeToolTip": "FumLabAPI\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T12:23:45.432Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "User.cs",
               "DocumentMoniker": "S:\\API\\FumLabAPI\\Domain\\Models\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\User.cs",

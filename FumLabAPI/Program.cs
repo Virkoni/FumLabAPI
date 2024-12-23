@@ -25,8 +25,9 @@ namespace FumLabAPI
                     builder.WithOrigins(
                             "http://localhost:5000",
                             "https://fumlabapi.onrender.com",
-                            "https://localhost:7053",
-                            "http://localhost:5057")
+                            "https://localhost:7049"
+
+                            )
                            .AllowAnyHeader()
                            .AllowAnyMethod()
                            .AllowCredentials();
@@ -36,7 +37,6 @@ namespace FumLabAPI
             // db
             builder.Services.AddDbContext<FumLabContext>(
                            options => options.UseSqlServer(builder.Configuration["ConnectionString"]));
-
 
             // holy shit 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
@@ -63,7 +63,6 @@ namespace FumLabAPI
             builder.Services.AddScoped<IReviewsService, ReviewsService>();
             builder.Services.AddScoped<IRoleService, RoleService>();
             builder.Services.AddScoped<IUserRoleService, UserRoleService>();
-
 
 
             builder.Services.AddControllers();
@@ -114,11 +113,10 @@ namespace FumLabAPI
             }
 
             app.UseHttpsRedirection();
+            app.UseRouting();
 
             app.UseAuthorization();
-
             app.MapControllers();
-
             app.Run();
         }
     }

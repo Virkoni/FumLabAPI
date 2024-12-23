@@ -2,10 +2,12 @@
 using Domain.Models;
 using FumLabAPI.Contracts.User;
 using Mapster;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FumLabAPI.Controllers
 {
+    [EnableCors("AllowSpecificOrigins")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase

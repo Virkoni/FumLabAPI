@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FumLabAPI.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class RoleController : ControllerBase
