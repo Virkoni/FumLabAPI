@@ -1,18 +1,51 @@
 ﻿@page "/counter"
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>we broke af</PageTitle>
 
 <h1>Counter</h1>
 
-<p role="status">Current count: @currentCount</p>
+<p role="status">Current $$$: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementCount">stonks</button>
+
+@if (showGif)
+{
+    <div class="gif-container">
+        <img src="https://media.tenor.com/aWBRe5gkGjEAAAAi/bouncing-reimu-fumo.gif?time=@timestamp"
+             alt="Bouncing Reimu Fumo" />
+    </div>
+}
 
 @code {
     private int currentCount = 0;
+    private bool showGif = false;
+    private string timestamp = DateTime.Now.Ticks.ToString();
+    private CancellationTokenSource? cancellationTokenSource;
 
     private void IncrementCount()
     {
         currentCount++;
+        ToggleGif();
+    }
+
+    private void ToggleGif()
+    {
+        showGif = true;
+        timestamp = DateTime.Now.Ticks.ToString(); 
+
+        cancellationTokenSource?.Cancel();
+
+
+        cancellationTokenSource = new CancellationTokenSource();
+        var token = cancellationTokenSource.Token;
+
+        _ = Task.Delay(600, token).ContinueWith(t =>
+        {
+            if (!t.IsCanceled)
+            {
+                showGif = false; 
+                StateHasChanged(); 
+            }
+        }, token);
     }
 }

@@ -304,3 +304,4 @@ S:\API\FumLabAPI\FumLabAPI\obj\Debug\net8.0\FumLabAPI.xml
 S:\API\FumLabAPI\FumLabAPI\obj\Debug\net8.0\FumLabAPI.pdb
 S:\API\FumLabAPI\FumLabAPI\obj\Debug\net8.0\FumLabAPI.genruntimeconfig.cache
 S:\API\FumLabAPI\FumLabAPI\obj\Debug\net8.0\ref\FumLabAPI.dll
+S:\API\FumLabAPI\FumLabAPI\bin\Debug\net8.0\Mapster.DependencyInjection.dll

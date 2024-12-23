@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DBdpLkYrS0Luvrx65Rzvjgjg6FdGkXoaaDJZUUfIp9w=",
+  "Hash": "O3HJQDTTmaD12Xd++NdMCVnIqPnFu+S7wEA004W1TvY=",
   "Source": "BlazorClient",
   "BasePath": "/",
   "Mode": "Root",
@@ -7864,12 +7864,12 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\favicon.png",
+      "Identity": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\fumo.png",
       "SourceId": "BlazorClient",
       "SourceType": "Discovered",
       "ContentRoot": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "favicon.png",
+      "RelativePath": "fumo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7880,7 +7880,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.png"
+      "OriginalItemSpec": "wwwroot\\fumo.png"
     },
     {
       "Identity": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\icon-192.png",
@@ -7919,25 +7919,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\sample-data\\weather.json",
-      "SourceId": "BlazorClient",
-      "SourceType": "Discovered",
-      "ContentRoot": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
     }
   ]
 }

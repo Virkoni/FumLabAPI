@@ -25,8 +25,8 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\fumo.png",
+      "PackagePath": "staticwebassets\\fumo.png"
     },
     {
       "Id": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\icon-192.png",
@@ -35,10 +35,6 @@
     {
       "Id": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
-    },
-    {
-      "Id": "S:\\API\\FumLabAPI\\BlazorClient\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorClient.Microsoft.AspNetCore.StaticWebAssets.props",

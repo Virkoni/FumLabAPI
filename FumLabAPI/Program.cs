@@ -2,10 +2,12 @@ using BusinessLogic.Services;
 using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
+using FumLabAPI.Helpers;
+using Mapster;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
-
 
 namespace FumLabAPI
 {
@@ -15,6 +17,19 @@ namespace FumLabAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // cors
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigins", builder =>
+                {
+                    builder.WithOrigins("https://localhost:7049", "https://fumlabapi.onrender.com", "https://localhost:7053", "http://localhost:5057")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials();
+                });
+            });
+
+            // db
             builder.Services.AddDbContext<FumLabContext>(
                            options => options.UseSqlServer(builder.Configuration["ConnectionString"]));
 
@@ -46,8 +61,9 @@ namespace FumLabAPI
             builder.Services.AddScoped<IUserRoleService, UserRoleService>();
 
 
-            builder.Services.AddControllers();
 
+            builder.Services.AddControllers();
+            builder.Services.AddMapster();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(options =>
             {
@@ -74,6 +90,7 @@ namespace FumLabAPI
 
             var app = builder.Build();
 
+            //migrations
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -82,7 +99,7 @@ namespace FumLabAPI
             }
 
 
-
+            // ??? if it works don't touch it
             // if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
