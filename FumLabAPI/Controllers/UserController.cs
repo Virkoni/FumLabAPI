@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FumLabAPI.Controllers
 {
-    [EnableCors("AllowSpecificOrigins")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase

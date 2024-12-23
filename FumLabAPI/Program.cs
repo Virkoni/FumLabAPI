@@ -17,22 +17,6 @@ namespace FumLabAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // cors
-            builder.Services.AddCors(options =>
-            {
-                options.AddPolicy("AllowSpecificOrigins", builder =>
-                {
-                    builder.WithOrigins(
-                            "http://localhost:5000",
-                            "https://fumlabapi.onrender.com",
-                            "https://localhost:7049"
-
-                            )
-                           .AllowAnyHeader()
-                           .AllowAnyMethod()
-                           .AllowCredentials();
-                });
-            });
 
             // db
             builder.Services.AddDbContext<FumLabContext>(
@@ -94,7 +78,10 @@ namespace FumLabAPI
             var app = builder.Build();
 
 
-            app.UseCors("AllowSpecificOrigins");
+            app.UseCors(builder => builder.WithOrigins(new[] { "https://fumlabapi.onrender.com", })
+           .AllowAnyHeader()
+           .AllowAnyMethod()
+           .AllowAnyOrigin());
 
             //migrations
             using (var scope = app.Services.CreateScope())
