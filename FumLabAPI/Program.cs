@@ -22,10 +22,14 @@ namespace FumLabAPI
             {
                 options.AddPolicy("AllowSpecificOrigins", builder =>
                 {
-                    builder.WithOrigins("https://localhost:7049", "https://fumlabapi.onrender.com", "https://localhost:7053", "http://localhost:5057")
-                        .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .AllowCredentials();
+                    builder.WithOrigins(
+                            "http://localhost:5000",
+                            "https://fumlabapi.onrender.com",
+                            "https://localhost:7053",
+                            "http://localhost:5057")
+                           .AllowAnyHeader()
+                           .AllowAnyMethod()
+                           .AllowCredentials();
                 });
             });
 
@@ -89,6 +93,9 @@ namespace FumLabAPI
 
 
             var app = builder.Build();
+
+
+            app.UseCors("AllowSpecificOrigins");
 
             //migrations
             using (var scope = app.Services.CreateScope())
